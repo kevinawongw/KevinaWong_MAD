@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,118 +13,127 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="pokemonEvolve" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" preservesSuperviewLayoutMargins="YES" image="ditto" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eEa-7t-lvw">
-                                <rect key="frame" x="58" y="151.99999999999997" width="259" height="322.33333333333326"/>
+                                <rect key="frame" x="58" y="213" width="298" height="320"/>
                                 <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="medium"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What should Ditto transform into?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kCk-RI-Gz2">
-                                <rect key="frame" x="16" y="482" width="329" height="54"/>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="249" layoutMarginsFollowReadableWidth="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" adjustsImageSizeForAccessibilityContentSizeCategory="YES" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="kuk-YE-L9f">
+                                <rect key="frame" x="37" y="619" width="118" height="42"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="54" id="MKq-Sa-Xoe"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="90" id="RK1-QA-eDI"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="16"/>
-                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <state key="normal" title="Pikachu">
+                                    <color key="titleColor" systemColor="systemYellowColor"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                                </state>
+                                <connections>
+                                    <action selector="changeImageAndText:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wxt-bA-42w"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="system" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wHH-dF-8d0">
+                                <rect key="frame" x="285" y="619" width="92" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="92" id="Rc9-5w-PGY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <state key="normal" title="Psyduck">
+                                    <color key="titleColor" systemColor="systemOrangeColor"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                                </state>
+                                <connections>
+                                    <action selector="changeImageAndText:" destination="BYZ-38-t0r" eventType="touchUpInside" id="M21-0s-gDX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" layoutMarginsFollowReadableWidth="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s0B-gX-iaj">
+                                <rect key="frame" x="37" y="676" width="188" height="42"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <state key="normal" title="Snorlax">
+                                    <color key="titleColor" red="0.12301893669777253" green="0.24711603887996153" blue="0.58839408797447135" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                                </state>
+                                <connections>
+                                    <action selector="changeImageAndText:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Hf-BT-EbT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" horizontalHuggingPriority="251" layoutMarginsFollowReadableWidth="YES" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="system" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IDN-Mf-lq8">
+                                <rect key="frame" x="233" y="676" width="144" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="144" id="x3f-4j-aw1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <state key="normal" title="Sudowoodoo">
+                                    <color key="titleColor" systemColor="systemGreenColor"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                                </state>
+                                <connections>
+                                    <action selector="changeImageAndText:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dYy-gy-r1c"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" layoutMarginsFollowReadableWidth="YES" text="Ditto loves to Transform! " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MVu-ZE-kLb">
+                                <rect key="frame" x="74.5" y="89" width="265" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="7jo-OQ-N33"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <color key="textColor" red="0.64058115507803004" green="0.32041012327198487" blue="0.68399441119321835" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" axis="vertical" spacing="23" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eNy-cO-K1C">
-                                <rect key="frame" x="28.666666666666657" y="555" width="318" height="99"/>
-                                <subviews>
-                                    <stackView contentMode="scaleAspectFit" layoutMarginsFollowReadableWidth="YES" spacing="126" translatesAutoresizingMaskIntoConstraints="NO" id="MkX-zo-W7r">
-                                        <rect key="frame" x="0.0" y="0.0" width="318" height="64"/>
-                                        <subviews>
-                                            <button opaque="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kuk-YE-L9f">
-                                                <rect key="frame" x="0.0" y="0.0" width="93" height="64"/>
-                                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="24"/>
-                                                <state key="normal" title="Pikachu">
-                                                    <color key="titleColor" systemColor="systemYellowColor"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="changeImageAndText:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wxt-bA-42w"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wHH-dF-8d0">
-                                                <rect key="frame" x="219" y="0.0" width="99" height="64"/>
-                                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="24"/>
-                                                <state key="normal" title="Psyduck">
-                                                    <color key="titleColor" systemColor="systemOrangeColor"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="changeImageAndText:" destination="BYZ-38-t0r" eventType="touchUpInside" id="M21-0s-gDX"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
-                                        <viewLayoutGuide key="safeArea" id="Z0W-4S-cy9"/>
-                                    </stackView>
-                                    <stackView clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" spacing="76" id="Vqx-xG-Apy">
-                                        <rect key="frame" x="0.0" y="59" width="318" height="40"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <subviews>
-                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s0B-gX-iaj">
-                                                <rect key="frame" x="0.0" y="0.0" width="89" height="40"/>
-                                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="24"/>
-                                                <state key="normal" title="Snorlax">
-                                                    <color key="titleColor" red="0.12301893669777253" green="0.24711603887996153" blue="0.58839408797447135" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="changeImageAndText:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Hf-BT-EbT"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" tag="4" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IDN-Mf-lq8">
-                                                <rect key="frame" x="165" y="0.0" width="153" height="40"/>
-                                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="24"/>
-                                                <state key="normal" title="Sudowoodoo">
-                                                    <color key="titleColor" systemColor="systemGreenColor"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="changeImageAndText:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dYy-gy-r1c"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
-                                    </stackView>
-                                </subviews>
-                            </stackView>
                             <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="up5-Rc-l8y">
-                                <rect key="frame" x="154" y="684" width="67" height="40"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="SI0-eg-Mrr"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="24"/>
+                                <rect key="frame" x="148" y="820" width="118" height="42"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                 <state key="normal" title="Reset">
                                     <color key="titleColor" systemColor="systemGrayColor"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
                                 </state>
                                 <connections>
                                     <action selector="changeImageAndText:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8yl-Z3-DS6"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ditto loves to Transform! " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MVu-ZE-kLb">
-                                <rect key="frame" x="30" y="89" width="315" height="55"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="What should Ditto transform into?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kCk-RI-Gz2">
+                                <rect key="frame" x="23" y="588" width="369" height="23"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="55" id="GLK-f4-Omf"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="284" id="kQ8-5x-lah"/>
+                                    <constraint firstAttribute="height" constant="23" id="wHY-Fh-IDV"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="18"/>
-                                <color key="textColor" red="0.64058115507803004" green="0.32041012327198487" blue="0.68399441119321835" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.97543211900929183" green="0.98352736230000004" blue="0.87568185010391419" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="kCk-RI-Gz2" firstAttribute="firstBaseline" secondItem="eEa-7t-lvw" secondAttribute="baseline" constant="23" symbolType="layoutAnchor" id="1mG-nv-daV"/>
-                            <constraint firstItem="up5-Rc-l8y" firstAttribute="top" secondItem="eNy-cO-K1C" secondAttribute="bottom" constant="30" id="F05-O4-78J"/>
-                            <constraint firstItem="eNy-cO-K1C" firstAttribute="top" secondItem="kCk-RI-Gz2" secondAttribute="bottom" constant="19" id="FKF-mA-p3b"/>
-                            <constraint firstItem="eEa-7t-lvw" firstAttribute="centerX" secondItem="eNy-cO-K1C" secondAttribute="centerX" id="LH1-yv-K76"/>
-                            <constraint firstItem="MVu-ZE-kLb" firstAttribute="trailing" secondItem="kCk-RI-Gz2" secondAttribute="trailing" id="LTt-8X-3sr"/>
-                            <constraint firstItem="MVu-ZE-kLb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="Pn8-9x-Ju6"/>
-                            <constraint firstItem="MVu-ZE-kLb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="45" id="TGS-1Z-7jv"/>
-                            <constraint firstItem="MVu-ZE-kLb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YFv-S9-Tdf"/>
-                            <constraint firstItem="kCk-RI-Gz2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="bj8-4i-UQi"/>
-                            <constraint firstItem="eEa-7t-lvw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="58" id="nX6-DZ-Wai"/>
-                            <constraint firstItem="eNy-cO-K1C" firstAttribute="centerX" secondItem="up5-Rc-l8y" secondAttribute="centerX" id="ukA-FH-4LV"/>
-                            <constraint firstItem="eEa-7t-lvw" firstAttribute="top" secondItem="MVu-ZE-kLb" secondAttribute="bottom" constant="8" symbolic="YES" id="w3V-9F-j2O"/>
-                            <constraint firstItem="MVu-ZE-kLb" firstAttribute="centerX" secondItem="eEa-7t-lvw" secondAttribute="centerX" id="xWK-HU-s9i"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="up5-Rc-l8y" secondAttribute="bottom" constant="54" id="zK5-Rc-ek0"/>
+                            <constraint firstItem="kCk-RI-Gz2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="23" id="1oP-an-Squ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="kuk-YE-L9f" secondAttribute="bottom" constant="201" id="3E2-bs-e8E"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wHH-dF-8d0" secondAttribute="trailing" constant="37" id="3vw-Ja-aSm"/>
+                            <constraint firstItem="up5-Rc-l8y" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="5LR-kY-oD6"/>
+                            <constraint firstItem="kCk-RI-Gz2" firstAttribute="centerX" secondItem="up5-Rc-l8y" secondAttribute="centerX" id="9N1-i3-PjO"/>
+                            <constraint firstItem="MVu-ZE-kLb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="45" id="Ao9-zm-kLr"/>
+                            <constraint firstItem="kuk-YE-L9f" firstAttribute="baseline" secondItem="wHH-dF-8d0" secondAttribute="baseline" id="Apb-7B-FMZ"/>
+                            <constraint firstItem="eEa-7t-lvw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="58" id="Bl3-gh-cFe"/>
+                            <constraint firstItem="MVu-ZE-kLb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EV0-ky-mwF"/>
+                            <constraint firstItem="MVu-ZE-kLb" firstAttribute="centerX" secondItem="eEa-7t-lvw" secondAttribute="centerX" id="GZk-pW-ZF2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="s0B-gX-iaj" secondAttribute="bottom" constant="144" id="Ggd-Th-DaA"/>
+                            <constraint firstItem="kuk-YE-L9f" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="37" id="MCF-Rm-lDy"/>
+                            <constraint firstItem="kuk-YE-L9f" firstAttribute="leading" secondItem="s0B-gX-iaj" secondAttribute="leading" id="Mu9-hD-fwI"/>
+                            <constraint firstItem="kuk-YE-L9f" firstAttribute="top" secondItem="kCk-RI-Gz2" secondAttribute="bottom" constant="8" symbolic="YES" id="Q2Z-bA-Rry"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="wHH-dF-8d0" secondAttribute="bottom" constant="201" id="SaA-jo-fHm"/>
+                            <constraint firstItem="kuk-YE-L9f" firstAttribute="trailing" secondItem="s0B-gX-iaj" secondAttribute="trailing" constant="-70" id="Y0u-cX-ZHi"/>
+                            <constraint firstItem="wHH-dF-8d0" firstAttribute="trailing" secondItem="IDN-Mf-lq8" secondAttribute="trailing" id="d4n-6X-87A"/>
+                            <constraint firstItem="s0B-gX-iaj" firstAttribute="baseline" secondItem="IDN-Mf-lq8" secondAttribute="baseline" id="d4r-02-Ndj"/>
+                            <constraint firstItem="wHH-dF-8d0" firstAttribute="leading" relation="lessThanOrEqual" secondItem="kuk-YE-L9f" secondAttribute="trailing" constant="130" id="ebD-e5-lMz"/>
+                            <constraint firstItem="up5-Rc-l8y" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="148" id="fJq-Bb-qyY"/>
+                            <constraint firstItem="s0B-gX-iaj" firstAttribute="top" secondItem="IDN-Mf-lq8" secondAttribute="top" id="hap-aU-tRr"/>
+                            <constraint firstItem="s0B-gX-iaj" firstAttribute="top" secondItem="kuk-YE-L9f" secondAttribute="bottom" constant="15" id="jFW-5P-3VU"/>
+                            <constraint firstItem="kuk-YE-L9f" firstAttribute="top" secondItem="wHH-dF-8d0" secondAttribute="top" id="nmw-TK-Op6"/>
+                            <constraint firstItem="IDN-Mf-lq8" firstAttribute="top" secondItem="wHH-dF-8d0" secondAttribute="bottom" constant="15" id="o6q-Br-cZ6"/>
+                            <constraint firstItem="eEa-7t-lvw" firstAttribute="top" secondItem="MVu-ZE-kLb" secondAttribute="bottom" constant="69" id="qdt-kp-Yhr"/>
+                            <constraint firstItem="kCk-RI-Gz2" firstAttribute="top" secondItem="eEa-7t-lvw" secondAttribute="bottom" constant="55" id="uP3-y8-SGE"/>
+                            <constraint firstItem="IDN-Mf-lq8" firstAttribute="leading" relation="lessThanOrEqual" secondItem="s0B-gX-iaj" secondAttribute="trailing" constant="8" symbolic="YES" id="wsh-Ac-ZL6"/>
+                            <constraint firstItem="eEa-7t-lvw" firstAttribute="centerX" secondItem="kCk-RI-Gz2" secondAttribute="centerX" id="zTX-91-Odr"/>
                         </constraints>
                     </view>
                     <connections>
