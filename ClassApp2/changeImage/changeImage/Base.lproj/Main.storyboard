@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="changeImage" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="156" translatesAutoresizingMaskIntoConstraints="NO" id="bKX-Ie-LQF">
+                                <rect key="frame" x="71.5" y="210" width="271" height="38"/>
+                                <subviews>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YCR-9h-fIA">
+                                        <rect key="frame" x="0.0" y="0.0" width="49" height="38"/>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="21"/>
+                                        <state key="normal" title="Itachi">
+                                            <color key="titleColor" systemColor="systemIndigoColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="chooseImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="U3z-pT-tt6"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IFm-ih-1ba">
+                                        <rect key="frame" x="205" y="0.0" width="66" height="38"/>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="21"/>
+                                        <state key="normal" title="Sasuke">
+                                            <color key="titleColor" systemColor="systemIndigoColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="chooseImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="czL-YQ-EgU"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Itachi &amp; Sasuke" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nhx-0d-IJO">
+                                <rect key="frame" x="46" y="134" width="322" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="8j7-2y-8gG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="itachiAndSasuke" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Z9Z-r2-95l">
+                                <rect key="frame" x="32" y="262" width="337" height="559"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Z9Z-r2-95l" secondAttribute="height" multiplier="161:274" constant="8.2627737226277418" id="2K5-rY-Udz"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Nhx-0d-IJO" firstAttribute="centerX" secondItem="Z9Z-r2-95l" secondAttribute="centerX" constant="6.5" id="8DP-Ob-A6g"/>
+                            <constraint firstItem="Nhx-0d-IJO" firstAttribute="centerX" secondItem="bKX-Ie-LQF" secondAttribute="centerX" id="9K3-UZ-dR5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Z9Z-r2-95l" secondAttribute="bottom" constant="41" id="L0B-8c-dip"/>
+                            <constraint firstItem="bKX-Ie-LQF" firstAttribute="top" secondItem="Nhx-0d-IJO" secondAttribute="bottom" constant="45" id="LND-mG-KkJ"/>
+                            <constraint firstItem="Z9Z-r2-95l" firstAttribute="top" secondItem="bKX-Ie-LQF" secondAttribute="bottom" constant="14" id="QuA-zY-NEX"/>
+                            <constraint firstItem="Nhx-0d-IJO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="90" id="RUo-gx-wch"/>
+                            <constraint firstItem="Nhx-0d-IJO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="46" id="f8f-HA-Ze5"/>
+                            <constraint firstItem="Nhx-0d-IJO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="i9F-kA-yvv"/>
+                            <constraint firstItem="Z9Z-r2-95l" firstAttribute="top" secondItem="bKX-Ie-LQF" secondAttribute="bottom" constant="14" id="yOS-1Z-9GA"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="artImage" destination="Z9Z-r2-95l" id="EI8-Xf-iQj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.75" y="86.956521739130437"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="itachiAndSasuke" width="642" height="1033"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
