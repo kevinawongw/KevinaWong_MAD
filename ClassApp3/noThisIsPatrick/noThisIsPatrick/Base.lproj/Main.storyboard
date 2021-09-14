@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="noThisIsPatrick" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="dkT-qh-XXg">
+                                <rect key="frame" x="32.5" y="236" width="349.5" height="424"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="8Gz-KH-CGV">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="222"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" layoutMarginsFollowReadableWidth="YES" image="krustyKrab" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8ju-L0-7VU">
+                                                <rect key="frame" x="0.0" y="0.0" width="320" height="180"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="240" id="3gi-bt-qeA"/>
+                                                    <constraint firstAttribute="width" secondItem="8ju-L0-7VU" secondAttribute="height" multiplier="16:9" id="8FM-Rj-MwY"/>
+                                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="180" id="Bdu-V3-QyX"/>
+                                                </constraints>
+                                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="medium"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Is this the Krusty Krab" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KI5-lJ-3Mp">
+                                                <rect key="frame" x="0.0" y="200" width="320" height="22"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="22" id="HOC-DA-0gM"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="a75-HN-xx9">
+                                        <rect key="frame" x="0.0" y="252" width="349.5" height="172"/>
+                                        <subviews>
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="BJg-dK-IUp">
+                                                <rect key="frame" x="0.0" y="0.0" width="349.5" height="32"/>
+                                                <segments>
+                                                    <segment title="KK?"/>
+                                                    <segment title="No &gt;:("/>
+                                                </segments>
+                                                <color key="selectedSegmentTintColor" systemColor="systemTealColor"/>
+                                                <connections>
+                                                    <action selector="changeInfo:" destination="BYZ-38-t0r" eventType="valueChanged" id="6PI-wg-Lwg"/>
+                                                </connections>
+                                            </segmentedControl>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="46" translatesAutoresizingMaskIntoConstraints="NO" id="gZI-WO-MFp">
+                                                <rect key="frame" x="0.0" y="71" width="349.5" height="31"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Capitalize" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ilM-MN-bfo">
+                                                        <rect key="frame" x="0.0" y="0.0" width="254.5" height="31"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="fft-tX-yL8">
+                                                        <rect key="frame" x="300.5" y="0.0" width="51" height="31"/>
+                                                        <color key="onTintColor" systemColor="systemYellowColor"/>
+                                                        <connections>
+                                                            <action selector="changeCaps:" destination="BYZ-38-t0r" eventType="valueChanged" id="1Zl-Nh-hkB"/>
+                                                        </connections>
+                                                    </switch>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="e2z-qq-n4Y">
+                                                <rect key="frame" x="0.0" y="142" width="349.5" height="30"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="16" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gGa-qb-oTp">
+                                                        <rect key="frame" x="0.0" y="0.0" width="18" height="30"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="16" minValue="6" maxValue="22" translatesAutoresizingMaskIntoConstraints="NO" id="vZv-z4-nCK">
+                                                        <rect key="frame" x="31" y="0.0" width="320.5" height="31"/>
+                                                        <color key="tintColor" systemColor="systemTealColor"/>
+                                                        <connections>
+                                                            <action selector="changeFontSize:" destination="BYZ-38-t0r" eventType="valueChanged" id="aLb-Yw-ri5"/>
+                                                        </connections>
+                                                    </slider>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="a75-HN-xx9" firstAttribute="centerX" secondItem="dkT-qh-XXg" secondAttribute="centerX" id="rah-Tl-Zh6"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.92509573700000003" green="0.99339169260000004" blue="0.96266895529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="dkT-qh-XXg" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="vTJ-2c-IrK"/>
+                            <constraint firstItem="dkT-qh-XXg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yIs-Lk-acb"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="appImage" destination="8ju-L0-7VU" id="7of-vk-2ov"/>
+                        <outlet property="appLabel" destination="KI5-lJ-3Mp" id="PO8-ng-Bei"/>
+                        <outlet property="capsSwitch" destination="fft-tX-yL8" id="MQq-ZS-DjU"/>
+                        <outlet property="fontSizeLabel" destination="gGa-qb-oTp" id="yO7-eu-pMK"/>
+                        <outlet property="segmentedControl" destination="BJg-dK-IUp" id="d6t-zQ-mcU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="88.392857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="krustyKrab" width="960" height="540"/>
+        <systemColor name="systemTealColor">
+            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
