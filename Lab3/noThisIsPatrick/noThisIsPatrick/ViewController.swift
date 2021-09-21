@@ -40,7 +40,7 @@ class ViewController: UIViewController {
         else if segmentedControl.selectedSegmentIndex == 0{
             appLabel.text = "is this the krusty krab"
             appImage.image = UIImage(named: "krustyKrab")
-            appLabel.textColor = UIColor.blue
+            appLabel.textColor = UIColor.systemTeal
         }
     }
     
