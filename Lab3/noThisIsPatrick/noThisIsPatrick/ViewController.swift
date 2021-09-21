@@ -34,11 +34,13 @@ class ViewController: UIViewController {
         if segmentedControl.selectedSegmentIndex == 1{
             appLabel.text = "no this is patrick"
             appImage.image = UIImage(named: "thisIsPatrick")
+            appLabel.textColor =  UIColor.systemPink
         }
         
         else if segmentedControl.selectedSegmentIndex == 0{
             appLabel.text = "is this the krusty krab"
             appImage.image = UIImage(named: "krustyKrab")
+            appLabel.textColor = UIColor.blue
         }
     }
     
