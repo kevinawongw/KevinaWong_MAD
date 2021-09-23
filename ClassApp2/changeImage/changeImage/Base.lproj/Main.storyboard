@@ -15,60 +15,100 @@
                     <view key="view" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="156" translatesAutoresizingMaskIntoConstraints="NO" id="bKX-Ie-LQF">
-                                <rect key="frame" x="71.5" y="210" width="271" height="38"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="31" translatesAutoresizingMaskIntoConstraints="NO" id="DrQ-JI-M2L">
+                                <rect key="frame" x="105" y="115" width="204.5" height="106"/>
                                 <subviews>
-                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YCR-9h-fIA">
-                                        <rect key="frame" x="0.0" y="0.0" width="49" height="38"/>
-                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="21"/>
-                                        <state key="normal" title="Itachi">
-                                            <color key="titleColor" systemColor="systemIndigoColor"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="chooseImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="U3z-pT-tt6"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IFm-ih-1ba">
-                                        <rect key="frame" x="205" y="0.0" width="66" height="38"/>
-                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="21"/>
-                                        <state key="normal" title="Sasuke">
-                                            <color key="titleColor" systemColor="systemIndigoColor"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="chooseImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="czL-YQ-EgU"/>
-                                        </connections>
-                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Itachi &amp; Sasuke" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nhx-0d-IJO">
+                                        <rect key="frame" x="0.0" y="0.0" width="204.5" height="37"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="31" id="8j7-2y-8gG"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="bKX-Ie-LQF">
+                                        <rect key="frame" x="14.5" y="68" width="175" height="38"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YCR-9h-fIA">
+                                                <rect key="frame" x="0.0" y="0.0" width="49" height="38"/>
+                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="21"/>
+                                                <state key="normal" title="Itachi">
+                                                    <color key="titleColor" systemColor="systemIndigoColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="chooseImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="U3z-pT-tt6"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IFm-ih-1ba">
+                                                <rect key="frame" x="109" y="0.0" width="66" height="38"/>
+                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="21"/>
+                                                <state key="normal" title="Sasuke">
+                                                    <color key="titleColor" systemColor="systemIndigoColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="chooseImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="czL-YQ-EgU"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <variation key="heightClass=compact-widthClass=regular" axis="vertical"/>
+                                    </stackView>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Itachi &amp; Sasuke" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nhx-0d-IJO">
-                                <rect key="frame" x="46" y="134" width="322" height="31"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" misplaced="YES" layoutMarginsFollowReadableWidth="YES" image="itachiAndSasuke" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Z9Z-r2-95l">
+                                <rect key="frame" x="39" y="272" width="337" height="569"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="31" id="8j7-2y-8gG"/>
+                                    <constraint firstAttribute="width" secondItem="Z9Z-r2-95l" secondAttribute="height" multiplier="113:176" id="Y8e-gH-n48"/>
+                                    <constraint firstAttribute="width" secondItem="Z9Z-r2-95l" secondAttribute="height" multiplier="276:481" id="glO-7I-xAU"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
-                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="itachiAndSasuke" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Z9Z-r2-95l">
-                                <rect key="frame" x="32" y="262" width="337" height="559"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="Z9Z-r2-95l" secondAttribute="height" multiplier="161:274" constant="8.2627737226277418" id="2K5-rY-Udz"/>
-                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="glO-7I-xAU"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="glO-7I-xAU"/>
+                                    </mask>
+                                </variation>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Nhx-0d-IJO" firstAttribute="centerX" secondItem="Z9Z-r2-95l" secondAttribute="centerX" constant="6.5" id="8DP-Ob-A6g"/>
-                            <constraint firstItem="Nhx-0d-IJO" firstAttribute="centerX" secondItem="bKX-Ie-LQF" secondAttribute="centerX" id="9K3-UZ-dR5"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Z9Z-r2-95l" secondAttribute="bottom" constant="41" id="L0B-8c-dip"/>
-                            <constraint firstItem="bKX-Ie-LQF" firstAttribute="top" secondItem="Nhx-0d-IJO" secondAttribute="bottom" constant="45" id="LND-mG-KkJ"/>
-                            <constraint firstItem="Z9Z-r2-95l" firstAttribute="top" secondItem="bKX-Ie-LQF" secondAttribute="bottom" constant="14" id="QuA-zY-NEX"/>
-                            <constraint firstItem="Nhx-0d-IJO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="90" id="RUo-gx-wch"/>
-                            <constraint firstItem="Nhx-0d-IJO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="46" id="f8f-HA-Ze5"/>
-                            <constraint firstItem="Nhx-0d-IJO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="i9F-kA-yvv"/>
-                            <constraint firstItem="Z9Z-r2-95l" firstAttribute="top" secondItem="bKX-Ie-LQF" secondAttribute="bottom" constant="14" id="yOS-1Z-9GA"/>
+                            <constraint firstItem="Z9Z-r2-95l" firstAttribute="centerX" secondItem="DrQ-JI-M2L" secondAttribute="centerX" id="Bb0-e5-eez"/>
+                            <constraint firstItem="Z9Z-r2-95l" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="95.5" id="JNJ-Ui-xg1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Z9Z-r2-95l" secondAttribute="bottom" constant="78" id="L0B-8c-dip"/>
+                            <constraint firstItem="DrQ-JI-M2L" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="58" id="e9A-LZ-O6d"/>
+                            <constraint firstItem="DrQ-JI-M2L" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="118" id="gyt-G2-sCn"/>
+                            <constraint firstItem="Z9Z-r2-95l" firstAttribute="centerY" secondItem="DrQ-JI-M2L" secondAttribute="centerY" constant="375.5" id="huA-wF-DM9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Z9Z-r2-95l" secondAttribute="trailing" constant="117" id="n7J-8L-jCH"/>
+                            <constraint firstItem="Z9Z-r2-95l" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="s16-zH-OhZ"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="L0B-8c-dip"/>
+                                <exclude reference="n7J-8L-jCH"/>
+                                <exclude reference="e9A-LZ-O6d"/>
+                                <exclude reference="Bb0-e5-eez"/>
+                                <exclude reference="JNJ-Ui-xg1"/>
+                                <exclude reference="huA-wF-DM9"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=regular">
+                            <mask key="constraints">
+                                <include reference="n7J-8L-jCH"/>
+                                <include reference="e9A-LZ-O6d"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="L0B-8c-dip"/>
+                                <include reference="Bb0-e5-eez"/>
+                                <include reference="JNJ-Ui-xg1"/>
+                                <include reference="huA-wF-DM9"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="artImage" destination="Z9Z-r2-95l" id="EI8-Xf-iQj"/>
@@ -76,7 +116,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="18.75" y="86.956521739130437"/>
+            <point key="canvasLocation" x="15.942028985507248" y="85.044642857142847"/>
         </scene>
     </scenes>
     <resources>
