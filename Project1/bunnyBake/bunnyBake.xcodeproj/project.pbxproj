@@ -7,8 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0A3FD5DE2703BE5F0057CAA7 /* Gluten-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0AD8C3CD2703B3AF00F9F8AA /* Gluten-VariableFont_wght.ttf */; };
-		0A3FD5DF2703BE610057CAA7 /* RampartOne-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0AD8C3CF2703B3B500F9F8AA /* RampartOne-Regular.ttf */; };
+		0ABE02322705184B00242CD9 /* disappointedBunny.gif in Resources */ = {isa = PBXBuildFile; fileRef = 0ABE02292705184B00242CD9 /* disappointedBunny.gif */; };
+		0ABE02332705184B00242CD9 /* starBunny.gif in Resources */ = {isa = PBXBuildFile; fileRef = 0ABE022A2705184B00242CD9 /* starBunny.gif */; };
+		0ABE02342705184B00242CD9 /* thumbsUpBunny.gif in Resources */ = {isa = PBXBuildFile; fileRef = 0ABE022B2705184B00242CD9 /* thumbsUpBunny.gif */; };
+		0ABE02352705184B00242CD9 /* wowBunny.gif in Resources */ = {isa = PBXBuildFile; fileRef = 0ABE022C2705184B00242CD9 /* wowBunny.gif */; };
+		0ABE02362705184B00242CD9 /* cryingBunny.gif in Resources */ = {isa = PBXBuildFile; fileRef = 0ABE022D2705184B00242CD9 /* cryingBunny.gif */; };
+		0ABE02372705184B00242CD9 /* neutral_bunny.gif in Resources */ = {isa = PBXBuildFile; fileRef = 0ABE022E2705184B00242CD9 /* neutral_bunny.gif */; };
+		0ABE02382705184B00242CD9 /* RampartOne-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0ABE02302705184B00242CD9 /* RampartOne-Regular.ttf */; };
+		0ABE02392705184B00242CD9 /* Gluten-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0ABE02312705184B00242CD9 /* Gluten-VariableFont_wght.ttf */; };
 		0AD8C3A22703852100F9F8AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD8C3A12703852100F9F8AA /* AppDelegate.swift */; };
 		0AD8C3A42703852200F9F8AA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD8C3A32703852200F9F8AA /* SceneDelegate.swift */; };
 		0AD8C3A62703852200F9F8AA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD8C3A52703852200F9F8AA /* ViewController.swift */; };
@@ -16,15 +22,17 @@
 		0AD8C3AB2703852700F9F8AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AD8C3AA2703852700F9F8AA /* Assets.xcassets */; };
 		0AD8C3AE2703852700F9F8AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AD8C3AC2703852700F9F8AA /* LaunchScreen.storyboard */; };
 		0AD8C3B62703931600F9F8AA /* gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD8C3B52703931500F9F8AA /* gif.swift */; };
-		0AD8C3BE270399EE00F9F8AA /* disappointedBunny.gif in Resources */ = {isa = PBXBuildFile; fileRef = 0AD8C3B8270399EE00F9F8AA /* disappointedBunny.gif */; };
-		0AD8C3BF270399EE00F9F8AA /* starBunny.gif in Resources */ = {isa = PBXBuildFile; fileRef = 0AD8C3B9270399EE00F9F8AA /* starBunny.gif */; };
-		0AD8C3C0270399EE00F9F8AA /* cryingBunny.gif in Resources */ = {isa = PBXBuildFile; fileRef = 0AD8C3BA270399EE00F9F8AA /* cryingBunny.gif */; };
-		0AD8C3C1270399EE00F9F8AA /* neutral_bunny.gif in Resources */ = {isa = PBXBuildFile; fileRef = 0AD8C3BB270399EE00F9F8AA /* neutral_bunny.gif */; };
-		0AD8C3C2270399EE00F9F8AA /* thumbsUpBunny.gif in Resources */ = {isa = PBXBuildFile; fileRef = 0AD8C3BC270399EE00F9F8AA /* thumbsUpBunny.gif */; };
-		0AD8C3C3270399EE00F9F8AA /* wowBunny.gif in Resources */ = {isa = PBXBuildFile; fileRef = 0AD8C3BD270399EE00F9F8AA /* wowBunny.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0ABE02292705184B00242CD9 /* disappointedBunny.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = disappointedBunny.gif; sourceTree = "<group>"; };
+		0ABE022A2705184B00242CD9 /* starBunny.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = starBunny.gif; sourceTree = "<group>"; };
+		0ABE022B2705184B00242CD9 /* thumbsUpBunny.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = thumbsUpBunny.gif; sourceTree = "<group>"; };
+		0ABE022C2705184B00242CD9 /* wowBunny.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = wowBunny.gif; sourceTree = "<group>"; };
+		0ABE022D2705184B00242CD9 /* cryingBunny.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = cryingBunny.gif; sourceTree = "<group>"; };
+		0ABE022E2705184B00242CD9 /* neutral_bunny.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = neutral_bunny.gif; sourceTree = "<group>"; };
+		0ABE02302705184B00242CD9 /* RampartOne-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RampartOne-Regular.ttf"; sourceTree = "<group>"; };
+		0ABE02312705184B00242CD9 /* Gluten-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gluten-VariableFont_wght.ttf"; sourceTree = "<group>"; };
 		0AD8C39E2703852100F9F8AA /* bunnyBake.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bunnyBake.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AD8C3A12703852100F9F8AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0AD8C3A32703852200F9F8AA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -34,14 +42,6 @@
 		0AD8C3AD2703852700F9F8AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0AD8C3AF2703852700F9F8AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0AD8C3B52703931500F9F8AA /* gif.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gif.swift; sourceTree = "<group>"; };
-		0AD8C3B8270399EE00F9F8AA /* disappointedBunny.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = disappointedBunny.gif; path = ../../../../Downloads/disappointedBunny.gif; sourceTree = "<group>"; };
-		0AD8C3B9270399EE00F9F8AA /* starBunny.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = starBunny.gif; path = ../../../../Downloads/starBunny.gif; sourceTree = "<group>"; };
-		0AD8C3BA270399EE00F9F8AA /* cryingBunny.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = cryingBunny.gif; path = ../../../../Downloads/cryingBunny.gif; sourceTree = "<group>"; };
-		0AD8C3BB270399EE00F9F8AA /* neutral_bunny.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = neutral_bunny.gif; path = ../../../../Downloads/neutral_bunny.gif; sourceTree = "<group>"; };
-		0AD8C3BC270399EE00F9F8AA /* thumbsUpBunny.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = thumbsUpBunny.gif; path = ../../../../Downloads/thumbsUpBunny.gif; sourceTree = "<group>"; };
-		0AD8C3BD270399EE00F9F8AA /* wowBunny.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = wowBunny.gif; path = ../../../../Downloads/wowBunny.gif; sourceTree = "<group>"; };
-		0AD8C3CD2703B3AF00F9F8AA /* Gluten-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Gluten-VariableFont_wght.ttf"; path = "../../../Downloads/Gluten/Gluten-VariableFont_wght.ttf"; sourceTree = "<group>"; };
-		0AD8C3CF2703B3B500F9F8AA /* RampartOne-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RampartOne-Regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +55,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0ABE02282705184B00242CD9 /* gifs */ = {
+			isa = PBXGroup;
+			children = (
+				0ABE02292705184B00242CD9 /* disappointedBunny.gif */,
+				0ABE022A2705184B00242CD9 /* starBunny.gif */,
+				0ABE022B2705184B00242CD9 /* thumbsUpBunny.gif */,
+				0ABE022C2705184B00242CD9 /* wowBunny.gif */,
+				0ABE022D2705184B00242CD9 /* cryingBunny.gif */,
+				0ABE022E2705184B00242CD9 /* neutral_bunny.gif */,
+			);
+			name = gifs;
+			path = "../../../Downloads/KevinaWong_MAD-main/Project1/bunnyBake/gifs";
+			sourceTree = "<group>";
+		};
+		0ABE022F2705184B00242CD9 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				0ABE02302705184B00242CD9 /* RampartOne-Regular.ttf */,
+				0ABE02312705184B00242CD9 /* Gluten-VariableFont_wght.ttf */,
+			);
+			name = fonts;
+			path = "../../../Downloads/KevinaWong_MAD-main/Project1/bunnyBake/fonts";
+			sourceTree = "<group>";
+		};
 		0AD8C3952703852100F9F8AA = {
 			isa = PBXGroup;
 			children = (
-				0AD8C3CC2703B3A700F9F8AA /* fonts */,
-				0AD8C3B7270399CF00F9F8AA /* gifs */,
+				0ABE022F2705184B00242CD9 /* fonts */,
+				0ABE02282705184B00242CD9 /* gifs */,
 				0AD8C3A02703852100F9F8AA /* bunnyBake */,
 				0AD8C39F2703852100F9F8AA /* Products */,
 			);
@@ -86,28 +110,6 @@
 				0AD8C3B52703931500F9F8AA /* gif.swift */,
 			);
 			path = bunnyBake;
-			sourceTree = "<group>";
-		};
-		0AD8C3B7270399CF00F9F8AA /* gifs */ = {
-			isa = PBXGroup;
-			children = (
-				0AD8C3BA270399EE00F9F8AA /* cryingBunny.gif */,
-				0AD8C3B8270399EE00F9F8AA /* disappointedBunny.gif */,
-				0AD8C3BB270399EE00F9F8AA /* neutral_bunny.gif */,
-				0AD8C3B9270399EE00F9F8AA /* starBunny.gif */,
-				0AD8C3BC270399EE00F9F8AA /* thumbsUpBunny.gif */,
-				0AD8C3BD270399EE00F9F8AA /* wowBunny.gif */,
-			);
-			path = gifs;
-			sourceTree = "<group>";
-		};
-		0AD8C3CC2703B3A700F9F8AA /* fonts */ = {
-			isa = PBXGroup;
-			children = (
-				0AD8C3CD2703B3AF00F9F8AA /* Gluten-VariableFont_wght.ttf */,
-				0AD8C3CF2703B3B500F9F8AA /* RampartOne-Regular.ttf */,
-			);
-			name = fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,15 +170,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				0AD8C3AE2703852700F9F8AA /* LaunchScreen.storyboard in Resources */,
-				0AD8C3C2270399EE00F9F8AA /* thumbsUpBunny.gif in Resources */,
-				0AD8C3BE270399EE00F9F8AA /* disappointedBunny.gif in Resources */,
+				0ABE02372705184B00242CD9 /* neutral_bunny.gif in Resources */,
+				0ABE02322705184B00242CD9 /* disappointedBunny.gif in Resources */,
 				0AD8C3AB2703852700F9F8AA /* Assets.xcassets in Resources */,
-				0AD8C3C0270399EE00F9F8AA /* cryingBunny.gif in Resources */,
-				0A3FD5DF2703BE610057CAA7 /* RampartOne-Regular.ttf in Resources */,
-				0AD8C3C3270399EE00F9F8AA /* wowBunny.gif in Resources */,
-				0AD8C3BF270399EE00F9F8AA /* starBunny.gif in Resources */,
-				0AD8C3C1270399EE00F9F8AA /* neutral_bunny.gif in Resources */,
-				0A3FD5DE2703BE5F0057CAA7 /* Gluten-VariableFont_wght.ttf in Resources */,
+				0ABE02362705184B00242CD9 /* cryingBunny.gif in Resources */,
+				0ABE02342705184B00242CD9 /* thumbsUpBunny.gif in Resources */,
+				0ABE02332705184B00242CD9 /* starBunny.gif in Resources */,
+				0ABE02352705184B00242CD9 /* wowBunny.gif in Resources */,
+				0ABE02392705184B00242CD9 /* Gluten-VariableFont_wght.ttf in Resources */,
+				0ABE02382705184B00242CD9 /* RampartOne-Regular.ttf in Resources */,
 				0AD8C3A92703852200F9F8AA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
