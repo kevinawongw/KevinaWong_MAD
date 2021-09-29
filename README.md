@@ -9,3 +9,15 @@
    
  ---
 
+#### Class App 1: 
+  
+  Hello World App
+  
+  
+#### Class App 2:
+  
+  Using switches
+  
+#### Class App 4: 
+  
+  Tip Calculator
