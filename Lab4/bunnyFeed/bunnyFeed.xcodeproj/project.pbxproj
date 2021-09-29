@@ -14,8 +14,6 @@
 		0ABE01F42704D3BE00242CD9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0ABE01F32704D3BE00242CD9 /* Assets.xcassets */; };
 		0ABE01F72704D3BE00242CD9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0ABE01F52704D3BE00242CD9 /* LaunchScreen.storyboard */; };
 		0ABE02062704D44100242CD9 /* gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABE02052704D44100242CD9 /* gif.swift */; };
-		0ABE020E27050CA300242CD9 /* gifs in Resources */ = {isa = PBXBuildFile; fileRef = 0ABE020C27050CA300242CD9 /* gifs */; };
-		0ABE020F27050CA300242CD9 /* fonts in Resources */ = {isa = PBXBuildFile; fileRef = 0ABE020D27050CA300242CD9 /* fonts */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,8 +26,6 @@
 		0ABE01F62704D3BE00242CD9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0ABE01F82704D3BE00242CD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0ABE02052704D44100242CD9 /* gif.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gif.swift; sourceTree = "<group>"; };
-		0ABE020C27050CA300242CD9 /* gifs */ = {isa = PBXFileReference; lastKnownFileType = folder; path = gifs; sourceTree = "<group>"; };
-		0ABE020D27050CA300242CD9 /* fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = fonts; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,8 +42,6 @@
 		0ABE01DE2704D3B500242CD9 = {
 			isa = PBXGroup;
 			children = (
-				0ABE020D27050CA300242CD9 /* fonts */,
-				0ABE020C27050CA300242CD9 /* gifs */,
 				0ABE01E92704D3B500242CD9 /* bunnyFeed */,
 				0ABE01E82704D3B500242CD9 /* Products */,
 			);
@@ -134,8 +128,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				0ABE01F72704D3BE00242CD9 /* LaunchScreen.storyboard in Resources */,
-				0ABE020F27050CA300242CD9 /* fonts in Resources */,
-				0ABE020E27050CA300242CD9 /* gifs in Resources */,
 				0ABE01F42704D3BE00242CD9 /* Assets.xcassets in Resources */,
 				0ABE01F22704D3B600242CD9 /* Main.storyboard in Resources */,
 			);
