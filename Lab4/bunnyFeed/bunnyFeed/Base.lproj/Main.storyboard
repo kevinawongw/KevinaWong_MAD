@@ -21,22 +21,22 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="tK3-5K-Pbc">
-                                <rect key="frame" x="24.5" y="20" width="326" height="627"/>
+                                <rect key="frame" x="24.5" y="72.5" width="326" height="522"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="4KA-xv-IBr">
-                                        <rect key="frame" x="0.0" y="0.0" width="326" height="331"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="326" height="244"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="Tlz-XA-DNI">
-                                                <rect key="frame" x="0.0" y="0.0" width="261" height="53.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="248.5" height="35.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hm0-d8-gzF">
-                                                        <rect key="frame" x="0.0" y="0.0" width="65" height="53.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="64.5" height="35.5"/>
                                                         <fontDescription key="fontDescription" name="GloriaHallelujah" family="Gloria Hallelujah" pointSize="22"/>
                                                         <color key="textColor" red="0.90836930270000005" green="0.51662129160000003" blue="0.47768509390000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Default Bunny" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="MeL-2e-fNS">
-                                                        <rect key="frame" x="82" y="0.0" width="179" height="53.5"/>
+                                                        <rect key="frame" x="81.5" y="0.0" width="167" height="35.5"/>
                                                         <color key="textColor" red="0.90836930270000005" green="0.51662129160000003" blue="0.47768509390000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <fontDescription key="fontDescription" name="GloriaHallelujah" family="Gloria Hallelujah" pointSize="22"/>
                                                         <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" spellCheckingType="no" keyboardType="alphabet" returnKeyType="done" smartDashesType="no" textContentType="name"/>
@@ -47,19 +47,19 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="43" translatesAutoresizingMaskIntoConstraints="NO" id="1XQ-mG-CFe">
-                                                <rect key="frame" x="0.0" y="53.5" width="326" height="229.5"/>
+                                                <rect key="frame" x="0.0" y="35.5" width="326" height="180.5"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="udd-8d-4SH">
-                                                        <rect key="frame" x="0.0" y="0.0" width="80" height="229.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="80" height="180.5"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z74-x4-xCq">
-                                                                <rect key="frame" x="0.0" y="0.0" width="80" height="79.5"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="80" height="47"/>
                                                                 <fontDescription key="fontDescription" name="GloriaHallelujah" family="Gloria Hallelujah" pointSize="40"/>
                                                                 <color key="textColor" red="0.90836930270000005" green="0.51662129160000003" blue="0.47768509390000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="cake-slice" translatesAutoresizingMaskIntoConstraints="NO" id="a64-vX-829">
-                                                                <rect key="frame" x="0.0" y="86.5" width="80" height="80"/>
+                                                                <rect key="frame" x="0.0" y="54" width="80" height="80"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="80" id="N7d-s8-hmf"/>
                                                                     <constraint firstAttribute="height" constant="80" id="a6U-bu-tqN"/>
@@ -67,7 +67,7 @@
                                                                 </constraints>
                                                             </imageView>
                                                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="20" translatesAutoresizingMaskIntoConstraints="NO" id="xAf-Tx-OHc">
-                                                                <rect key="frame" x="0.0" y="197.5" width="80" height="32"/>
+                                                                <rect key="frame" x="0.0" y="148.5" width="80" height="32"/>
                                                                 <color key="tintColor" red="0.90836930270000005" green="0.51662129160000003" blue="0.47768509390000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <connections>
                                                                     <action selector="cakeIncrement:" destination="BYZ-38-t0r" eventType="valueChanged" id="6se-c7-hva"/>
@@ -78,16 +78,16 @@
                                                         <variation key="heightClass=regular-widthClass=compact" alignment="fill" distribution="equalCentering"/>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="ae4-nW-YVx">
-                                                        <rect key="frame" x="123" y="0.0" width="80" height="229.5"/>
+                                                        <rect key="frame" x="123" y="0.0" width="80" height="180.5"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Rx-ae-cKe">
-                                                                <rect key="frame" x="0.0" y="0.0" width="80" height="79.5"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="80" height="47"/>
                                                                 <fontDescription key="fontDescription" name="GloriaHallelujah" family="Gloria Hallelujah" pointSize="40"/>
                                                                 <color key="textColor" red="0.90836930270000005" green="0.51662129160000003" blue="0.47768509390000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="donut" translatesAutoresizingMaskIntoConstraints="NO" id="4Yu-Ay-ihd">
-                                                                <rect key="frame" x="0.0" y="86.5" width="80" height="80"/>
+                                                                <rect key="frame" x="0.0" y="54" width="80" height="80"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="80" id="6Jv-dD-II4"/>
                                                                     <constraint firstAttribute="width" secondItem="4Yu-Ay-ihd" secondAttribute="height" multiplier="1:1" id="IFh-5M-Iip"/>
@@ -95,7 +95,7 @@
                                                                 </constraints>
                                                             </imageView>
                                                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="20" translatesAutoresizingMaskIntoConstraints="NO" id="Ih6-vY-Fp1">
-                                                                <rect key="frame" x="0.0" y="197.5" width="80" height="32"/>
+                                                                <rect key="frame" x="0.0" y="148.5" width="80" height="32"/>
                                                                 <color key="tintColor" red="0.90836930270000005" green="0.51662129160000003" blue="0.47768509390000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <connections>
                                                                     <action selector="donutIncrement:" destination="BYZ-38-t0r" eventType="valueChanged" id="MZZ-3a-AkU"/>
@@ -106,16 +106,16 @@
                                                         <variation key="heightClass=regular-widthClass=compact" alignment="fill" distribution="equalCentering"/>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="CbR-G9-gmZ">
-                                                        <rect key="frame" x="246" y="0.0" width="80" height="229.5"/>
+                                                        <rect key="frame" x="246" y="0.0" width="80" height="180.5"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gjh-7e-Ply">
-                                                                <rect key="frame" x="0.0" y="0.0" width="80" height="79.5"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="80" height="47"/>
                                                                 <fontDescription key="fontDescription" name="GloriaHallelujah" family="Gloria Hallelujah" pointSize="40"/>
                                                                 <color key="textColor" red="0.90836930270000005" green="0.51662129160000003" blue="0.47768509390000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="panna-cotta" translatesAutoresizingMaskIntoConstraints="NO" id="NQE-0E-sim">
-                                                                <rect key="frame" x="0.0" y="86.5" width="80" height="80"/>
+                                                                <rect key="frame" x="0.0" y="54" width="80" height="80"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="80" id="JFH-k8-pXQ"/>
                                                                     <constraint firstAttribute="width" secondItem="NQE-0E-sim" secondAttribute="height" multiplier="1:1" id="iHz-73-6Xc"/>
@@ -123,7 +123,7 @@
                                                                 </constraints>
                                                             </imageView>
                                                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="20" translatesAutoresizingMaskIntoConstraints="NO" id="nA5-GX-UmF">
-                                                                <rect key="frame" x="0.0" y="197.5" width="80" height="32"/>
+                                                                <rect key="frame" x="0.0" y="148.5" width="80" height="32"/>
                                                                 <color key="tintColor" red="0.90836930270000005" green="0.51662129160000003" blue="0.47768509390000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <connections>
                                                                     <action selector="puddingIncrement:" destination="BYZ-38-t0r" eventType="valueChanged" id="4rO-UA-XZP"/>
@@ -136,16 +136,16 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="jIY-Tj-2gp">
-                                                <rect key="frame" x="0.0" y="283" width="168.5" height="48"/>
+                                                <rect key="frame" x="0.0" y="216" width="165" height="28"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Happiness Points: " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fkh-z6-UpD">
-                                                        <rect key="frame" x="0.0" y="6" width="154" height="36"/>
+                                                        <rect key="frame" x="0.0" y="3.5" width="151.5" height="21"/>
                                                         <fontDescription key="fontDescription" name="GloriaHallelujah" family="Gloria Hallelujah" pointSize="18"/>
                                                         <color key="textColor" red="0.90836930270000005" green="0.51662129160000003" blue="0.47768509390000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5W2-Y6-nCc">
-                                                        <rect key="frame" x="154" y="0.0" width="14.5" height="48"/>
+                                                        <rect key="frame" x="151.5" y="0.0" width="13.5" height="28"/>
                                                         <fontDescription key="fontDescription" name="GloriaHallelujah" family="Gloria Hallelujah" pointSize="24"/>
                                                         <color key="textColor" red="0.90836930270000005" green="0.51662129160000003" blue="0.47768509390000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -168,7 +168,7 @@
                                         </variation>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="Gvf-el-h4V">
-                                        <rect key="frame" x="63" y="339" width="200" height="288"/>
+                                        <rect key="frame" x="63" y="252" width="200" height="270"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="hungryBunny.gif" translatesAutoresizingMaskIntoConstraints="NO" id="BLC-v3-567">
                                                 <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
@@ -178,13 +178,13 @@
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bunny is hungry!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ldX-4R-EtW">
-                                                <rect key="frame" x="17" y="202" width="166.5" height="44"/>
+                                                <rect key="frame" x="18" y="202" width="164.5" height="26"/>
                                                 <fontDescription key="fontDescription" name="GloriaHallelujah" family="Gloria Hallelujah" pointSize="22"/>
                                                 <color key="textColor" red="0.90836930270000005" green="0.51662129160000003" blue="0.47768509390000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ID0-e2-Afx">
-                                                <rect key="frame" x="40" y="248" width="120" height="40"/>
+                                                <rect key="frame" x="40" y="230" width="120" height="40"/>
                                                 <state key="normal" image="Reset"/>
                                                 <connections>
                                                     <action selector="reset:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qRq-5Z-iUs"/>
