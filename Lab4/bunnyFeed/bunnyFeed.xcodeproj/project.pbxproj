@@ -18,6 +18,7 @@
 		0ABE02172705122700242CD9 /* eatingBunny.gif in Resources */ = {isa = PBXBuildFile; fileRef = 0ABE02122705122700242CD9 /* eatingBunny.gif */; };
 		0ABE02182705122700242CD9 /* bunnyFeed.gif in Resources */ = {isa = PBXBuildFile; fileRef = 0ABE02132705122700242CD9 /* bunnyFeed.gif */; };
 		0ABE02192705122700242CD9 /* GloriaHallelujah-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0ABE02152705122700242CD9 /* GloriaHallelujah-Regular.ttf */; };
+		0ABE021B2705131600242CD9 /* hungryBunny.gif in Resources */ = {isa = PBXBuildFile; fileRef = 0ABE021A2705131600242CD9 /* hungryBunny.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		0ABE02122705122700242CD9 /* eatingBunny.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = eatingBunny.gif; sourceTree = "<group>"; };
 		0ABE02132705122700242CD9 /* bunnyFeed.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = bunnyFeed.gif; sourceTree = "<group>"; };
 		0ABE02152705122700242CD9 /* GloriaHallelujah-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GloriaHallelujah-Regular.ttf"; sourceTree = "<group>"; };
+		0ABE021A2705131600242CD9 /* hungryBunny.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = hungryBunny.gif; path = ../../../../.Trash/hungryBunny.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 				0ABE02112705122700242CD9 /* foodComaBunny.gif */,
 				0ABE02122705122700242CD9 /* eatingBunny.gif */,
 				0ABE02132705122700242CD9 /* bunnyFeed.gif */,
+				0ABE021A2705131600242CD9 /* hungryBunny.gif */,
 			);
 			path = gifs;
 			sourceTree = SOURCE_ROOT;
@@ -159,6 +162,7 @@
 				0ABE02182705122700242CD9 /* bunnyFeed.gif in Resources */,
 				0ABE02172705122700242CD9 /* eatingBunny.gif in Resources */,
 				0ABE02162705122700242CD9 /* foodComaBunny.gif in Resources */,
+				0ABE021B2705131600242CD9 /* hungryBunny.gif in Resources */,
 				0ABE01F42704D3BE00242CD9 /* Assets.xcassets in Resources */,
 				0ABE02192705122700242CD9 /* GloriaHallelujah-Regular.ttf in Resources */,
 				0ABE01F22704D3B600242CD9 /* Main.storyboard in Resources */,
