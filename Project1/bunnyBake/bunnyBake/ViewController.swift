@@ -6,9 +6,11 @@
 //
 
 import UIKit
+import AVFoundation
 
 class ViewController: UIViewController {
-
+    
+    var audioPlayer: AVAudioPlayer?
     @IBOutlet weak var neuralBunny: UIImageView!
     
     // Selection Booleans
@@ -130,6 +132,18 @@ class ViewController: UIViewController {
     // Select Main Ingredients
     
     @IBAction func eggSelection(_ sender: UIButton) {
+        
+        let bubbleSound = Bundle.main.path(forResource: "bubble", ofType: "wav")!
+        let url = URL(fileURLWithPath: bubbleSound)
+        
+        do{
+        audioPlayer = try AVAudioPlayer(contentsOf: url)
+        audioPlayer?.play()
+        }
+        catch{
+            // error
+        }
+        
         if eggSelect == false{
             eggSelect = true
             sender.setImage(UIImage(named:"eggs_selected"), for: UIControl.State.normal)
