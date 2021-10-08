@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A1C750227078EFD0061E7B0 /* dessertPopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1C750127078EFD0061E7B0 /* dessertPopUp.swift */; };
+		0A1C7504270790DE0061E7B0 /* userChoices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1C7503270790DE0061E7B0 /* userChoices.swift */; };
 		0A7BCB8E27061E1500363372 /* bubble.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0A7BCB8A27061E1500363372 /* bubble.wav */; };
 		0A7BCB8F27061E1500363372 /* bling.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0A7BCB8B27061E1500363372 /* bling.wav */; };
 		0A7BCB9027061E1500363372 /* madeIt.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0A7BCB8C27061E1500363372 /* madeIt.wav */; };
@@ -29,6 +31,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A1C750127078EFD0061E7B0 /* dessertPopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dessertPopUp.swift; sourceTree = "<group>"; };
+		0A1C7503270790DE0061E7B0 /* userChoices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userChoices.swift; sourceTree = "<group>"; };
 		0A7BCB8A27061E1500363372 /* bubble.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = bubble.wav; sourceTree = "<group>"; };
 		0A7BCB8B27061E1500363372 /* bling.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = bling.wav; sourceTree = "<group>"; };
 		0A7BCB8C27061E1500363372 /* madeIt.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = madeIt.wav; sourceTree = "<group>"; };
@@ -118,10 +122,12 @@
 		0AD8C3A02703852100F9F8AA /* bunnyBake */ = {
 			isa = PBXGroup;
 			children = (
+				0A1C7503270790DE0061E7B0 /* userChoices.swift */,
 				0AD8C3A12703852100F9F8AA /* AppDelegate.swift */,
 				0AD8C3A32703852200F9F8AA /* SceneDelegate.swift */,
 				0AD8C3A72703852200F9F8AA /* Main.storyboard */,
 				0AD8C3A52703852200F9F8AA /* ViewController.swift */,
+				0A1C750127078EFD0061E7B0 /* dessertPopUp.swift */,
 				0AD8C3AA2703852700F9F8AA /* Assets.xcassets */,
 				0AD8C3AC2703852700F9F8AA /* LaunchScreen.storyboard */,
 				0AD8C3AF2703852700F9F8AA /* Info.plist */,
@@ -214,6 +220,8 @@
 			files = (
 				0AD8C3A62703852200F9F8AA /* ViewController.swift in Sources */,
 				0AD8C3A22703852100F9F8AA /* AppDelegate.swift in Sources */,
+				0A1C750227078EFD0061E7B0 /* dessertPopUp.swift in Sources */,
+				0A1C7504270790DE0061E7B0 /* userChoices.swift in Sources */,
 				0AD8C3B62703931600F9F8AA /* gif.swift in Sources */,
 				0AD8C3A42703852200F9F8AA /* SceneDelegate.swift in Sources */,
 			);

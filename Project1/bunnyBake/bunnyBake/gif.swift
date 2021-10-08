@@ -1,3 +1,4 @@
+//  Credit: Arne Bahlo
 //
 //  Gif.swift
 //  SwiftGif
