@@ -221,7 +221,7 @@ class ViewController: UIViewController {
         
         let bubbleSound = Bundle.main.path(forResource: "bubble", ofType: "wav")!
         let url = URL(fileURLWithPath: bubbleSound)
-        
+    
         do{
         audioPlayer = try AVAudioPlayer(contentsOf: url)
         audioPlayer?.play()
@@ -764,20 +764,21 @@ class ViewController: UIViewController {
         }
         
         // Cookies:
-        else if eggSelect == true && oilSelect == false && whippingCreamSelect == false && butterSelect == true && flourSelect == true && sugarSelect == true && milkSelect == false{
+        else if eggSelect == true && oilSelect == false && whippingCreamSelect == false && butterSelect == true && flourSelect == true && molassesSelect == false && milkSelect == false{
             finalRecipe = "\(flavor) Cookies"
+            image = "cookie"
         }
         
         // Gingerbread:
         else if eggSelect == true && oilSelect == false && whippingCreamSelect == false && butterSelect == true && flourSelect == true && molassesSelect == true && milkSelect == false{
-            finalRecipe = "\(flavor) GingerBread Cookies"
+            finalRecipe = "GingerBread Cookies"
             image = "gingerbread-man"
         }
         
         // Ice Cream:
         else if eggSelect == true && oilSelect == false && whippingCreamSelect == true && butterSelect == false && flourSelect == false && milkSelect == true{
             finalRecipe = "\(flavor) Ice Cream"
-            if flavor == "Strawberry"{
+            if flavor == "Strawberry" || flavor == "Apple"{
                 image = "ice-cream"
             }
             else{
@@ -792,9 +793,9 @@ class ViewController: UIViewController {
         }
          
         // Muffin:
-        else if eggSelect == true && oilSelect == false && whippingCreamSelect == false && butterSelect == true && flourSelect == true && sugarSelect == true && milkSelect == false {
+        else if eggSelect == true && oilSelect == false && whippingCreamSelect == false && butterSelect == true && flourSelect == true && milkSelect == true{
             finalRecipe = "\(flavor) Muffin"
-            if flavor == "Chocolate"{
+            if flavor == "Chocolate" || flavor == "Coffee"{
                 image = "muffin"
             }
             else{
@@ -804,11 +805,44 @@ class ViewController: UIViewController {
         
         // Cake:
         
-        else if eggSelect == true && oilSelect == true && whippingCreamSelect == false && butterSelect == true && flourSelect == true && milkSelect == true {
+        else if eggSelect == true && oilSelect == true && whippingCreamSelect == true && butterSelect == true && flourSelect == true && milkSelect == true {
             finalRecipe = "\(flavor) Cake"
-            image = "cake-slice"
+            if flavor == "Strawberry" || flavor == "Apple"{
+                image = "cake-slice"
+            }
+            else{
+                image = "cake"
+            }
         }
         
+        // Cream Puff / Eclair:
+        
+        else if eggSelect == true && oilSelect == false && whippingCreamSelect == true && butterSelect == false && flourSelect == true && milkSelect == false{
+            
+            if flavor == "Chocolate" || flavor == "Coffee"{
+                finalRecipe = "\(flavor) Eclair"
+                image = "eclair"
+            }
+            else{
+                finalRecipe = "\(flavor) Cream Puff"
+                image = "pastry"
+            }
+
+        }
+        
+        // Meringue:
+        
+        else if eggSelect == true && oilSelect == false && whippingCreamSelect == false && butterSelect == false && flourSelect == false && milkSelect == false && sugarSelect == true {
+            finalRecipe = "\(flavor) Meringue"
+            image = "meringue"
+        }
+        
+        // Croissant:
+        
+        else if eggSelect == false && oilSelect == false && whippingCreamSelect == false && butterSelect == true && flourSelect == true && milkSelect == false {
+            finalRecipe = "\(flavor) Croissant"
+            image = "croissant"
+        }
         
         // Tart:
         
@@ -816,6 +850,14 @@ class ViewController: UIViewController {
             finalRecipe = "\(flavor) Tart"
             image = "tart"
         }
+        
+        // Scone
+        
+        else if eggSelect == true && oilSelect == false && whippingCreamSelect == true && butterSelect == true && flourSelect == true && milkSelect == true {
+            finalRecipe = "\(flavor) Scone"
+            image = "scone"
+        }
+        
         
         else{
             finalRecipe = "Trash"
