@@ -750,6 +750,7 @@ class ViewController: UIViewController {
 
 
     @IBAction func bakeButton(_ sender: UIButton) {
+
         getRecipe()
         resetAll()
         
@@ -858,10 +859,45 @@ class ViewController: UIViewController {
             image = "scone"
         }
         
-        
         else{
             finalRecipe = "Trash"
             image = "garbage"
+        }
+        
+        if finalRecipe == "Trash"{
+            
+            /*
+             Reference code on how to delay audio
+             https://stackoverflow.com/questions/31840081/play-sound-with-a-little-delay
+            */
+            
+            
+            let bubbleSound = Bundle.main.path(forResource: "trash", ofType: "wav")!
+            let url = URL(fileURLWithPath: bubbleSound)
+            
+            do{
+                let seconds = 0.3
+                let when = DispatchTime.now() + seconds
+                audioPlayer = try AVAudioPlayer(contentsOf: url)
+                 DispatchQueue.main.asyncAfter(deadline: when) {
+                    self.audioPlayer?.play()
+                 }
+             }
+            catch {
+                
+            }
+        }
+        else{
+            let bubbleSound = Bundle.main.path(forResource: "madeIt", ofType: "wav")!
+            let url = URL(fileURLWithPath: bubbleSound)
+            
+            do{
+            audioPlayer = try AVAudioPlayer(contentsOf: url)
+            audioPlayer?.play()
+            }
+            catch{
+                // do nothing
+            }
         }
     }
     

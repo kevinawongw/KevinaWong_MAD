@@ -6,17 +6,18 @@
 //
 
 import UIKit
+import AVFoundation
 
 
 class dessertPopUp: UIViewController {
     
 
     var user = userChoices()
+    var audioPlayer: AVAudioPlayer?
+
     
     @IBOutlet weak var dessertText: UITextField!
-    
     @IBOutlet weak var dessertImage: UIImageView!
-    
     @IBOutlet weak var wowBunny: UIImageView!
     
     var recipe = ""
@@ -34,6 +35,7 @@ class dessertPopUp: UIViewController {
 
         // Code reference from stack overflow to show how to share a screenshot
         // https://stackoverflow.com/questions/32188822/taking-screenshot-and-share-with-share-button
+        
         let bounds = UIScreen.main.bounds
         UIGraphicsBeginImageContextWithOptions(bounds.size, true, 0.0)
         self.view.drawHierarchy(in: bounds, afterScreenUpdates: false)
@@ -41,7 +43,7 @@ class dessertPopUp: UIViewController {
         UIGraphicsEndImageContext()
 
         let activityViewController =
-            UIActivityViewController(activityItems: [myRecipe, img ?? myImage!],
+            UIActivityViewController(activityItems: [img ?? myImage!, myRecipe],
                                      applicationActivities: nil)
         
         self.present(activityViewController, animated: true, completion: nil)
@@ -49,8 +51,6 @@ class dessertPopUp: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-
-
         // Do any additional setup after loading the view.
     }
     
@@ -58,6 +58,16 @@ class dessertPopUp: UIViewController {
     
     
     @IBAction func bakeAgainButton(_ sender: UIButton) {
+        let bubbleSound = Bundle.main.path(forResource: "bubble", ofType: "wav")!
+        let url = URL(fileURLWithPath: bubbleSound)
+        
+        do{
+        audioPlayer = try AVAudioPlayer(contentsOf: url)
+        audioPlayer?.play()
+        }
+        catch{
+            // do nothing
+        }
         self.dismiss(animated: true, completion: nil)
     }
     
