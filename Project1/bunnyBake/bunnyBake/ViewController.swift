@@ -11,6 +11,21 @@ import AVFoundation
 
 class ViewController: UIViewController {
     
+    /*
+     View Did Load
+     */
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view.
+        neuralBunny.loadGif(name:"neutral_bunny")
+        
+    }
+    
+    /*
+     Variables
+     */
+    
     var eggSelect:Bool = false;
     var milkSelect:Bool = false;
     var oilSelect:Bool = false;
@@ -32,23 +47,18 @@ class ViewController: UIViewController {
     var flavor:String = "";
     var finalRecipe:String = "";
     var image:String = "";
-    
-    
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        neuralBunny.loadGif(name:"neutral_bunny")
-        
-    }
-    
     var user = userChoices()
     
     /*
         Source for all audio pieces of code within the controller:
         https://www.youtube.com/watch?v=1htq-c4kVdA
     */
+    
     var audioPlayer: AVAudioPlayer?
+    
+    /*
+     Passing Data to toher view
+     */
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
@@ -76,14 +86,12 @@ class ViewController: UIViewController {
         
         if finalRecipe == "Trash"{
             scene1ViewController.wowBunny.loadGif(name: randomSad.randomElement() ?? "disappointedBunny")
-
         }
         else{
             scene1ViewController.wowBunny.loadGif(name: randomImages.randomElement() ?? "wowBunny")
         }
     }
     
-
      /*
         Outlets
      */
@@ -114,6 +122,7 @@ class ViewController: UIViewController {
         Toggle Off Buttons
         Used for reset and buttons where only one from each group is allowed
      */
+    
     func eggToggleOff(){
         eggSelect = false;
         eggOutlet.setImage(UIImage(named: "eggs"), for: UIControl.State.normal)
@@ -756,27 +765,35 @@ class ViewController: UIViewController {
         
     }
     
+    /*
+     Functions
+     */
+    
     func getRecipe(){
     
         // Whipped Cream:
+        
         if eggSelect == false && oilSelect == false && whippingCreamSelect == true && butterSelect == false && flourSelect == false && milkSelect == false{
             finalRecipe = "\(flavor) Whipped Cream"
             image = "cream"
         }
         
         // Cookies:
+        
         else if eggSelect == true && oilSelect == false && whippingCreamSelect == false && butterSelect == true && flourSelect == true && molassesSelect == false && milkSelect == false{
             finalRecipe = "\(flavor) Cookies"
             image = "cookie"
         }
         
         // Gingerbread:
+        
         else if eggSelect == true && oilSelect == false && whippingCreamSelect == false && butterSelect == true && flourSelect == true && molassesSelect == true && milkSelect == false{
             finalRecipe = "GingerBread Cookies"
             image = "gingerbread-man"
         }
         
         // Ice Cream:
+        
         else if eggSelect == true && oilSelect == false && whippingCreamSelect == true && butterSelect == false && flourSelect == false && milkSelect == true{
             finalRecipe = "\(flavor) Ice Cream"
             if flavor == "Strawberry" || flavor == "Apple"{
@@ -788,12 +805,14 @@ class ViewController: UIViewController {
         }
         
         // Tiramisu:
+        
         else if eggSelect == true && oilSelect == false && whippingCreamSelect == true && butterSelect == false && flourSelect == true && milkSelect == true && flavor == "Coffee"{
             finalRecipe = "Tiramisu"
             image = "tiramisu"
         }
          
         // Muffin:
+        
         else if eggSelect == true && oilSelect == false && whippingCreamSelect == false && butterSelect == true && flourSelect == true && milkSelect == true{
             finalRecipe = "\(flavor) Muffin"
             if flavor == "Chocolate" || flavor == "Coffee"{
@@ -859,6 +878,13 @@ class ViewController: UIViewController {
             image = "scone"
         }
         
+        // Pancakes
+        
+        else if eggSelect == true && oilSelect == false && whippingCreamSelect == false && butterSelect == false && flourSelect == true && milkSelect == true {
+            finalRecipe = "\(flavor) Pancakes"
+            image = "pancakes"
+        }
+        
         else{
             finalRecipe = "Trash"
             image = "garbage"
@@ -870,7 +896,6 @@ class ViewController: UIViewController {
              Reference code on how to delay audio
              https://stackoverflow.com/questions/31840081/play-sound-with-a-little-delay
             */
-            
             
             let bubbleSound = Bundle.main.path(forResource: "trash", ofType: "wav")!
             let url = URL(fileURLWithPath: bubbleSound)
@@ -925,10 +950,8 @@ class ViewController: UIViewController {
         lemonToggleOff()
         
         user = userChoices()
-        
+    
     }
-
-
 
 }
 

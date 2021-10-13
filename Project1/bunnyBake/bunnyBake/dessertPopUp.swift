@@ -11,30 +11,50 @@ import AVFoundation
 
 class dessertPopUp: UIViewController {
     
+    /*
+     View Did Load
+     */
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view.
+    }
 
+    /*
+     Variables
+     */
+    
     var user = userChoices()
     var audioPlayer: AVAudioPlayer?
+    var recipe = ""
+    var image = ""
 
+    
+    /*
+     IBOutlets
+     */
     
     @IBOutlet weak var dessertText: UITextField!
     @IBOutlet weak var dessertImage: UIImageView!
     @IBOutlet weak var wowBunny: UIImageView!
-    
-    var recipe = ""
-    var image = "" 
+     
+    /*
+     IBActions
+     */
     
     @IBAction func unwindSegue (_ segue:UIStoryboardSegue){
         let scene1ViewController = segue.destination as! ViewController
         scene1ViewController.resetAll()
     }
     
-
     @IBAction func shareButton(_ sender: UIButton) {
+        
         let myRecipe = recipe
         let myImage = UIImage(named: image)
 
-        // Code reference from stack overflow to show how to share a screenshot
-        // https://stackoverflow.com/questions/32188822/taking-screenshot-and-share-with-share-button
+        /* Code reference from stack overflow to show how to share a screenshot
+        https://stackoverflow.com/questions/32188822/taking-screenshot-and-share-with-share-button
+        */
         
         let bounds = UIScreen.main.bounds
         UIGraphicsBeginImageContextWithOptions(bounds.size, true, 0.0)
@@ -49,13 +69,6 @@ class dessertPopUp: UIViewController {
         self.present(activityViewController, animated: true, completion: nil)
         
     }
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
-    }
-    
-    
-    
     
     @IBAction func bakeAgainButton(_ sender: UIButton) {
         let bubbleSound = Bundle.main.path(forResource: "bubble", ofType: "wav")!
