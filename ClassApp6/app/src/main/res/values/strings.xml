@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">halloweenApp</string>
     <string name="buttonString">BOO!</string>
+    <string name="editName">Enter Name</string>
 </resources>
