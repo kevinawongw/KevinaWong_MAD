@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="tacoTuesday" >Taco Tuesday</string>
+    <string name="chicken">Chicken</string>
+    <string name="steak">Steak</string>
+    <string name="veggie">Veggie</string>
+    <string name="tacoPress">Taco!</string>
+    <string name="taco" />
+    <string name="guac">Guacamole</string>
+    <string name="salsa">Salsa</string>
+    <string name="queso">Queso</string>
+    <string name="sourcream">Sour Cream</string>
+
+    <string-array name="location">
+        <item>Taco Bell</item>
+        <item>Chipotle</item>
+        <item>QDoba</item>
+    </string-array>
+</resources>
