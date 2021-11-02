@@ -33,26 +33,25 @@ class MainActivity : AppCompatActivity() {
         else{
             val filling = findViewById<RadioButton>(fillingId).text
             tempString = "You'd like $filling tacos"
-        }
+            if (checkbox1.isChecked){
+                toppingsList += " with " + checkbox1.text
+            }
+            if (checkbox2.isChecked){
+                toppingsList += " with " + checkbox2.text
 
-        if (checkbox1.isChecked){
-            toppingsList += " with " + checkbox1.text
-        }
-        if (checkbox2.isChecked){
-            toppingsList += " with " + checkbox2.text
+            }
+            if (checkbox3.isChecked){
+                toppingsList += " with " + checkbox3.text
 
-        }
-        if (checkbox3.isChecked){
-            toppingsList += " with " + checkbox3.text
+            }
+            if (checkbox4.isChecked){
+                toppingsList += " with " + checkbox4.text
+            }
 
+            val image = findViewById<ImageView>(R.id.imageView)
+            image.setImageResource(R.drawable.tacos2)
+            messageText.text = "${tempString} ${toppingsList} at ${location.selectedItem}"
         }
-        if (checkbox4.isChecked){
-            toppingsList += " with " + checkbox4.text
-        }
-
-        val image = findViewById<ImageView>(R.id.imageView)
-        image.setImageResource(R.drawable.tacos2)
-        messageText.text = "${tempString} ${toppingsList} at ${location.selectedItem}"
     }
 }
 
