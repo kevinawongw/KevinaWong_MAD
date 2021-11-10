@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Lab7</string>
+    <string name="mealPlanner">Meal Planner</string>
+    <string name="breakfast">Breakfast</string>
+    <string name="lunch">Lunch</string>
+    <string name="dinner">Dinner</string>
+    <string name="vegan">Vegan</string>
+    <string name="Drink">Drink:</string>
+    <string name="drink">What sauces would you like?</string>
+    <string name="ketchup">Ketchup</string>
+    <string name="syrup">Syrup</string>
+    <string name="ranch">Ranch</string>
+    <string name="hotsauce">Hot Sauce</string>
+    <string name="mustard">Mustard</string>
+    <string name="whippedCream">Cream</string>
+    <string name="reveal">Reveal Meal</string>
+    <string name="foodText" />
+
+    <string-array name="drink">
+        <item>Water</item>
+        <item>Milk</item>
+        <item>Orange Juice</item>
+        <item>Soda</item>
+        <item>Coffee</item>
+        <item>Wine</item>
+    </string-array>
+</resources>

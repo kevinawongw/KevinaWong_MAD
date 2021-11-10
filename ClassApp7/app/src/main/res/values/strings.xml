@@ -10,6 +10,7 @@
     <string name="salsa">Salsa</string>
     <string name="queso">Queso</string>
     <string name="sourcream">Sour Cream</string>
+    <string name="glutenFree">Gluten-Free</string>
 
     <string-array name="location">
         <item>Taco Bell</item>
