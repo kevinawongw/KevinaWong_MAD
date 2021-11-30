@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="imageWidth">90dp</dimen>
+    <dimen name="seedOptionHeight">60dp</dimen>
+    <dimen name="plantSizse">100dp</dimen>
+</resources>

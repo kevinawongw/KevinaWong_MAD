@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PlantCare">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="389dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:divider="@drawable/divider"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:showDividers="middle|end|none">
+
+            <TextView
+                android:id="@+id/plantName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:autoText="true"
+                android:background="@drawable/rounded_corners"
+                android:fontFamily="@font/paytone_one"
+                android:lines="1"
+                android:maxLines="1"
+                android:minHeight="48dp"
+                android:minLines="1"
+                android:singleLine="true"
+                android:text="@string/name"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="@color/white"
+                tools:text="temp" />
+
+            <ImageView
+                android:id="@+id/plantImage"
+                android:layout_width="177dp"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/heartImage"
+                android:layout_width="31dp"
+                android:layout_height="32dp"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/growthText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/rounded_corners"
+            android:fontFamily="@font/paytone_one"
+            android:text="@string/growthString"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/white"
+            app:circularflow_defaultRadius="20dp"
+            app:circularflow_radiusInDP="20dp"
+            tools:text="Growth: 100%" />
+
+        <LinearLayout
+            android:id="@+id/buttonLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:dividerPadding="0dp"
+            android:orientation="horizontal"
+            android:showDividers="middle">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:showDividers="middle">
+
+                <Button
+                    android:id="@+id/waterButton"
+                    android:layout_width="190dp"
+                    android:layout_height="60dp"
+                    android:fontFamily="@font/paytone_one"
+                    android:text="@string/Water"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    app:cornerRadius="40dp"
+                    app:icon="@drawable/watering"
+                    app:iconGravity="start"
+                    app:iconSize="50dp"
+                    app:iconTintMode="multiply" />
+
+                <Button
+                    android:id="@+id/pesticideButton"
+                    android:layout_width="190dp"
+                    android:layout_height="60dp"
+                    android:fontFamily="@font/paytone_one"
+                    android:text="@string/pesticide"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    app:cornerRadius="40dp"
+                    app:icon="@drawable/pesticide"
+                    app:iconGravity="start"
+                    app:iconSize="40dp"
+                    app:iconTintMode="multiply" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/divider" />
+
+            <LinearLayout
+                android:id="@+id/buttonLayoutH2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:showDividers="middle">
+
+                <Button
+                    android:id="@+id/fertilizerButton"
+                    android:layout_width="190dp"
+                    android:layout_height="60dp"
+                    android:fontFamily="@font/paytone_one"
+                    android:text="@string/fertilizer"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    app:cornerRadius="40dp"
+                    app:icon="@drawable/fertilizer"
+                    app:iconGravity="start"
+                    app:iconSize="45dp"
+                    app:iconTintMode="multiply" />
+
+                <Button
+                    android:id="@+id/hugButton"
+                    android:layout_width="190dp"
+                    android:layout_height="60dp"
+                    android:fontFamily="@font/paytone_one"
+                    android:text="@string/hug"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    app:cornerRadius="40dp"
+                    app:icon="@drawable/hug"
+                    app:iconGravity="start"
+                    app:iconSize="50dp"
+                    app:iconTintMode="multiply" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

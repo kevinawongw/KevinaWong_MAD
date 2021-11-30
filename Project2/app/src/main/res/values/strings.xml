@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Plant Pals</string>
+    <string name="PlantPalsTitle">Plant Pals</string>
+    <string name="newPlant"> New Plant</string>
+    <string name="resumePlant">Resume Plant</string>
+    <string name="helpInstructions">
+        "Welcome to Plant Pal! \n
+        Here's how to play: \n
+        1. Pick your plant. You can choose between a Tulip, Apple Tree, or Garlic. \n
+        2. Care for your plant. You can water it, spray fertilizer, spray pesticide, or hug your plant.\n
+        3. Give it the perfect amount of love and care to get higher star plants, but be careful not to do too much, you might kill it!\n
+        Have fun!
+        "</string>
+    <string name="choosePlant">Choose a Plant:</string>
+    <string name="seedSelection">Tulip</string>
+    <string name="plantName" />
+    <string name="optionalNameHint">Optional Name</string>
+    <string name="select">Select</string>
+    <string name="name" />
+    <string name="growthString" />
+    <string name="Water">Water</string>
+    <string name="pesticide">Pesticide</string>
+    <string name="hug">Hug</string>
+    <string name="fertilizer">Fertilize</string>
+    <string name="playAgain">Plant Again</string>
+</resources>

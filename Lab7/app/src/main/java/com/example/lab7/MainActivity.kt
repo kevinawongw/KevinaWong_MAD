@@ -53,6 +53,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun createMeal(view: android.view.View) {
+
         val mealID = radioGroup.checkedRadioButtonId
 
         if (mealID == -1){

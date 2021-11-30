@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">My Application</string>
-    <string name="tacoTuesday" >Taco Tuesday</string>
+    <string name="tacoTuesday">Taco Tuesday</string>
     <string name="chicken">Chicken</string>
     <string name="steak">Steak</string>
     <string name="veggie">Veggie</string>
@@ -11,10 +11,21 @@
     <string name="queso">Queso</string>
     <string name="sourcream">Sour Cream</string>
     <string name="glutenFree">Gluten-Free</string>
+    <string name="locationButton">Find Food</string>
 
     <string-array name="location">
         <item>Taco Bell</item>
         <item>Chipotle</item>
         <item>QDoba</item>
     </string-array>
+    <string name="title_activity_main2">MainActivity2</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="feedback">Feedback</string>
 </resources>

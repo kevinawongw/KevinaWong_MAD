@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+    <stroke
+        android:width="8dp"
+        android:color="@color/plantPalGreen" />
+
+    <solid android:color="@color/white" />
+
+    <padding
+        android:left="15dp"
+        android:right="15dp"
+        android:bottom="1dp"
+        android:top="1dp" />
+    <corners android:radius="25dp" />
+</shape>
+
+    <!--Source for rounded corners for textview-->
+    <!--https://stackoverflow.com/questions/18781902/rounded-corner-for-textview-in-android-->
+
+
