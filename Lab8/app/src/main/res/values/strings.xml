@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Pet Adopt</string>
+    <string name="pickSpecies">Pick a Pet!</string>
+    <string name="adopt">Adopt</string>
+    <string name="namePet">Give your Pet a Name</string>
+    <string name="next">Next</string>
+    <string name="petDetails">Pet Details</string>
+    <string name="Congrats">Congrats!</string>
+    <string name="Browse">Browse</string>
+    <string name="AdoptAgain">Re-Adopt</string>
+</resources>
