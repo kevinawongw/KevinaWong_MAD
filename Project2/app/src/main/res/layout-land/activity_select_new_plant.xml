@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".selectNewPlant">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="bottom|center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:showDividers="middle"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/choosePlant"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="clip_horizontal|center|top"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/paytone_one"
+                android:text="@string/choosePlant"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColor="@color/primaryDarkColor"
+                app:autoSizeMinTextSize="8dp" />
+
+            <LinearLayout
+                android:id="@+id/seedLinear"
+                android:layout_width="158dp"
+                android:layout_height="268dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="20dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/tulipSeed"
+                    style="@android:style/Widget.ImageButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:background="@color/white"
+                    android:onClick="displayTulipOption"
+                    android:scaleType="centerInside"
+                    android:tintMode="src_in"
+                    app:srcCompat="@drawable/tulip_seed"
+                    tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck,ImageContrastCheck" />
+
+                <ImageView
+                    android:id="@+id/imageView9"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    app:srcCompat="@drawable/divider" />
+
+                <ImageButton
+                    android:id="@+id/treeSeed"
+                    style="@android:style/Widget.ImageButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:background="@color/cardview_light_background"
+                    android:onClick="displayTreeOption"
+                    android:scaleType="centerInside"
+                    android:tintMode="src_in"
+                    app:srcCompat="@drawable/tree_seed"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+                <ImageView
+                    android:id="@+id/imageView11"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    app:srcCompat="@drawable/divider" />
+
+                <ImageButton
+                    android:id="@+id/garlicSeed"
+                    style="@android:style/Widget.ImageButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:background="@color/white"
+                    android:onClick="displayGarlicOption"
+                    android:scaleType="centerInside"
+                    android:tintMode="src_in"
+                    app:srcCompat="@drawable/garlic_seed"
+                    tools:ignore="SpeakableTextPresentCheck" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0"
+            app:srcCompat="@drawable/divider" />
+
+        <LinearLayout
+            android:id="@+id/plantLinear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="16dp"
+            android:animateLayoutChanges="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:visibility="invisible"
+            android:weightSum="0.7"
+            tools:visibility="visible">
+
+            <TextView
+                android:id="@+id/seedSelectionText"
+                android:layout_width="174dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/paytone_one"
+                android:lines="1"
+                android:minLines="1"
+                android:singleLine="true"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="@color/plantPalGreen"
+                app:autoSizeMinTextSize="6dp"
+                app:autoSizeTextType="uniform" />
+
+            <ImageView
+                android:id="@+id/seedSelecttionImage"
+                android:layout_width="@dimen/imageWidth"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="centerInside"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:srcCompat="@drawable/appletree"
+                tools:visibility="visible" />
+
+            <EditText
+                android:id="@+id/optionalName"
+                android:layout_width="286dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:fontFamily="@font/paytone_one"
+                android:hint="@string/optionalNameHint"
+                android:inputType="textPersonName"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="@string/plantName" />
+
+            <Button
+                android:id="@+id/selectButton"
+                android:layout_width="139dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/paytone_one"
+                android:text="@string/select"
+                app:cornerRadius="20pt" />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

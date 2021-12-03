@@ -1,12 +1,16 @@
 package com.example.plantpals
 
 import android.content.Intent
+import android.content.res.Configuration
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.DisplayMetrics
 import android.util.Log
 import android.widget.Button
 import android.widget.ImageView
+import android.widget.LinearLayout
 import android.widget.TextView
+import androidx.core.content.ContextCompat
 
 class EndPlant : AppCompatActivity() {
 
@@ -18,6 +22,8 @@ class EndPlant : AppCompatActivity() {
     lateinit var star2: ImageView
     lateinit var star3: ImageView
     lateinit var plantFeedback: TextView
+    lateinit var starsAndFeedback: LinearLayout
+    lateinit var stars: LinearLayout
     var myPlant: Plant? = null
 
     // OnCreate
@@ -40,6 +46,8 @@ class EndPlant : AppCompatActivity() {
         star2 = findViewById(R.id.star2)
         star3 = findViewById(R.id.star3)
         plantFeedback = findViewById(R.id.plantFeedback)
+        starsAndFeedback = findViewById(R.id.starsAndDescription)
+        stars = findViewById(R.id.stars)
 
         // Load text and image based on the plant from intent
         plantName.text = myPlant!!.name
@@ -96,7 +104,41 @@ class EndPlant : AppCompatActivity() {
                 }
             }
         }
+
+        val displayMetrics = DisplayMetrics()
+        windowManager.defaultDisplay.getMetrics(displayMetrics)
+        val height = displayMetrics.heightPixels
+        val width = displayMetrics.widthPixels
+        Log.i("WIDTH", "${width}")
+
+        if (this.getResources()
+                .getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE
+        ) {
+            plantImage.layoutParams.height = height / 3
+            star1.layoutParams.width  = width / 11
+            star1.layoutParams.height  = width / 11
+            star2.layoutParams.width  = width / 11
+            star2.layoutParams.height  = width / 11
+            star3.layoutParams.width  = width / 11
+            star3.layoutParams.height  = width / 11
+            stars.layoutParams.height = width / 11
+
+
+            starsAndFeedback.layoutParams.width = width / 2
+
+        } else {
+            plantImage.layoutParams.height = height / 4
+
+        }
+        when (width) {
+            in 0..800 -> {
+                plantName.setTextAppearance(this, R.style.TextAppearance_AppCompat_Small)
+                plantName.setTextColor(ContextCompat.getColor(this, R.color.white))
+
+            }
+        }
     }
+
 
     // Override back press - takes user to home screen
     override fun onBackPressed() {
@@ -108,4 +150,5 @@ class EndPlant : AppCompatActivity() {
         super.onBackPressed()
         finish()
     }
+
 }

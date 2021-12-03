@@ -14,7 +14,7 @@
     <corners android:radius="25dp" />
 </shape>
 
-    <!--Source for rounded corners for textview-->
-    <!--https://stackoverflow.com/questions/18781902/rounded-corner-for-textview-in-android-->
+<!--Source for rounded corners for textview-->
+<!--https://stackoverflow.com/questions/18781902/rounded-corner-for-textview-in-android-->
 
 

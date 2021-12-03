@@ -8,13 +8,14 @@
 
     <LinearLayout
         android:id="@+id/linearLayout2"
-        android:layout_width="389dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:divider="@drawable/divider"
+        android:layout_marginEnd="8dp"
         android:gravity="center_horizontal"
         android:orientation="vertical"
-        android:showDividers="middle|end|none"
+        android:showDividers="none"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -24,6 +25,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
             android:background="@drawable/rounded_corners"
             android:fontFamily="@font/paytone_one"
             android:lines="1"
@@ -37,13 +39,18 @@
 
         <ImageView
             android:id="@+id/plantImage"
-            android:layout_width="247dp"
-            android:layout_height="231dp" />
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginBottom="8dp"
+            tools:srcCompat="@drawable/appletree" />
 
         <LinearLayout
             android:id="@+id/starsAndDescription"
-            android:layout_width="357dp"
-            android:layout_height="218dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
             android:background="@drawable/outlined_rounded_corners"
             android:orientation="vertical">
 
@@ -55,8 +62,9 @@
                 app:srcCompat="@drawable/divider" />
 
             <LinearLayout
+                android:id="@+id/stars"
                 android:layout_width="match_parent"
-                android:layout_height="62dp"
+                android:layout_height="60dp"
                 android:orientation="horizontal">
 
                 <ImageView
@@ -84,9 +92,8 @@
 
             <TextView
                 android:id="@+id/plantFeedback"
-                android:layout_width="327dp"
-                android:layout_height="110dp"
-                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:fontFamily="@font/paytone_one"
                 android:gravity="center_horizontal|center_vertical"
                 android:text="TextView"
@@ -107,7 +114,6 @@
             android:id="@+id/playAgainButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="0"
             android:fontFamily="@font/paytone_one"
             android:text="@string/playAgain"
             app:cornerRadius="20dp" />

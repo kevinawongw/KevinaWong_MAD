@@ -1,6 +1,7 @@
 package com.example.plantpals
 
 import android.content.Intent
+import android.content.res.Configuration
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.DisplayMetrics
@@ -9,6 +10,7 @@ import android.view.View
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.core.content.ContextCompat
 
 class PlantCare : AppCompatActivity() {
 
@@ -70,12 +72,12 @@ class PlantCare : AppCompatActivity() {
             Log.i("Water?", myPlant!!.waterPercentage.toString())
 
             // If the plant is fully grown, move to completion screen
-            if (myPlant!!.curStage == myPlant!!.totalStage - 1 && myPlant!!.numWaterInStage == 1){
-                myPlant!!.water()
+            if (myPlant!!.curStage == myPlant!!.totalStage){
                 val intentCare = Intent(this, EndPlant::class.java)
                 intentCare.putExtra("Plant", myPlant)
                 startActivity(intentCare)
             }
+
         }
 
         // Fertilize Button
@@ -88,7 +90,7 @@ class PlantCare : AppCompatActivity() {
             myPlant!!.fertilize()
 
             // If the plant is killed from fertilizer
-            if (!myPlant!!.alive){
+            if (!myPlant!!.alive) {
                 val intentCare = Intent(this, EndPlant::class.java)
                 intentCare.putExtra("Plant", myPlant)
                 startActivity(intentCare)
@@ -105,7 +107,7 @@ class PlantCare : AppCompatActivity() {
             myPlant!!.pesticide()
 
             // If the plant is killed from pesticide
-            if (!myPlant!!.alive){
+            if (!myPlant!!.alive) {
                 val intentCare = Intent(this, EndPlant::class.java)
                 intentCare.putExtra("Plant", myPlant)
                 startActivity(intentCare)
@@ -122,7 +124,7 @@ class PlantCare : AppCompatActivity() {
             myPlant!!.hug()
 
             // If the plant is killed from hugging
-            if (!myPlant!!.alive){
+            if (!myPlant!!.alive) {
                 val intentCare = Intent(this, EndPlant::class.java)
                 intentCare.putExtra("Plant", myPlant)
                 startActivity(intentCare)
@@ -138,53 +140,46 @@ class PlantCare : AppCompatActivity() {
         val height = displayMetrics.heightPixels
         val width = displayMetrics.widthPixels
         Log.i("WIDTH", "${width}")
-        when (width){
+
+        if (this.getResources()
+                .getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE
+        ) {
+
+            hugButton.layoutParams.width = height / 2
+            waterButton.layoutParams.width = height / 2
+            pesticideButton.layoutParams.width = height / 2
+            fertilizeButton.layoutParams.width = height / 2
+            plantImage.layoutParams.height = height / 3
+
+
+        } else {
+            hugButton.layoutParams.width = width / 2 - (width / 25)
+            waterButton.layoutParams.width = width / 2 - (width / 25)
+            pesticideButton.layoutParams.width = width / 2 - (width / 25)
+            fertilizeButton.layoutParams.width = width / 2 - (width / 25)
+            plantImage.layoutParams.width = width / 3
+            plantImage.layoutParams.height = width / 3
+
+        }
+        when (width) {
             in 0..800 -> {
-                divider.scaleX = 0.5F
-                divider.scaleY = 0.5F
 
-                plantImage.layoutParams.width = 150
-                plantImage.layoutParams.height = 150
-                heartImageView.layoutParams.width = 20
-                heartImageView.layoutParams.width = 20
+                hugButton.setTextAppearance(this, R.style.TextAppearance_AppCompat_Small)
+                waterButton.setTextAppearance(this, R.style.TextAppearance_AppCompat_Small)
+                fertilizeButton.setTextAppearance(this, R.style.TextAppearance_AppCompat_Small)
+                pesticideButton.setTextAppearance(this, R.style.TextAppearance_AppCompat_Small)
+                plantName.setTextAppearance(this, R.style.TextAppearance_AppCompat_Small)
+                plantGrowth.setTextAppearance(this, R.style.TextAppearance_AppCompat_Small)
 
-//                hugButton.layoutParams.width = 210
-//                hugButton.layoutParams.height = 90
-                hugButton.scaleX = 0.6F
-                hugButton.scaleY = 0.6F
+                hugButton.setTextColor(ContextCompat.getColor(this, R.color.white))
+                waterButton.setTextColor(ContextCompat.getColor(this, R.color.white))
+                fertilizeButton.setTextColor(ContextCompat.getColor(this, R.color.white))
+                pesticideButton.setTextColor(ContextCompat.getColor(this, R.color.white))
+                plantName.setTextColor(ContextCompat.getColor(this, R.color.white))
+                plantGrowth.setTextColor(ContextCompat.getColor(this, R.color.white))
 
-
-//                waterButton.layoutParams.width = 210
-//                waterButton.layoutParams.height = 90
-                waterButton.scaleX = 0.6F
-                waterButton.scaleY = 0.6F
-
-//                fertilizeButton.layoutParams.width = 210
-//                fertilizeButton.layoutParams.height = 90
-                fertilizeButton.scaleX = 0.6F
-                fertilizeButton.scaleY = 0.6F
-
-//                pesticideButton.layoutParams.width = 210
-//                pesticideButton.layoutParams.height = 90
-                pesticideButton.scaleX = 0.6F
-                pesticideButton.scaleY = 0.6F
-
-                plantImage.requestLayout()
-            }
-            in 800..1500 -> {
-                plantImage.layoutParams.width = 700
-                plantImage.layoutParams.height = 700
-
-                plantImage.requestLayout()
-            }
-            in 1500..2500 ->{
-                plantImage.layoutParams.width = 900
-                plantImage.layoutParams.height = 900
-
-                plantImage.requestLayout()
             }
         }
-
     }
 
     // Override back press to take it back to home screen

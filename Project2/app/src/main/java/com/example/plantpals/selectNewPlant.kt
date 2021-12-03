@@ -1,14 +1,14 @@
 package com.example.plantpals
 
 import android.content.Intent
+import android.content.res.Configuration
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.View
 import android.widget.*
 import android.util.DisplayMetrics
-
-
+import androidx.core.content.ContextCompat
 
 
 // Variables and Views
@@ -21,6 +21,8 @@ lateinit var linearLayout: LinearLayout
 lateinit var selectButton: Button
 lateinit var customName: EditText
 lateinit var seedLayout: LinearLayout
+lateinit var choosePlant: TextView
+
 var myPlant: Plant? = null
 
 class selectNewPlant : AppCompatActivity() {
@@ -38,6 +40,7 @@ class selectNewPlant : AppCompatActivity() {
         selectButton = findViewById(R.id.selectButton)
         customName = findViewById(R.id.optionalName)
         seedLayout = findViewById(R.id.seedLinear)
+        choosePlant = findViewById(R.id.choosePlant)
 
         // Select Plant Listener (Will create plant and pass the plant onto next activity)
         selectButton.setOnClickListener{
@@ -57,27 +60,49 @@ class selectNewPlant : AppCompatActivity() {
         val height = displayMetrics.heightPixels
         val width = displayMetrics.widthPixels
         Log.i("WIDTH", "${width}")
+
+
+        if (this.getResources().getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE) {
+            seedLayout.layoutParams.height = height / 2
+            seedImage.layoutParams.width = height / 4
+        }
+        else {
+            seedLayout.layoutParams.width = width
+            seedLayout.layoutParams.height = height / 7
+            seedImage.layoutParams.width = width / 3
+        }
+
+
         when (width){
             in 0..800 -> {
-                seedImage.layoutParams.width = 200
-                seedLayout.layoutParams.height = 90
-                seedText.textSize = 14.0F
-                seedImage.requestLayout()
+                if (this.getResources().getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE) {
+                    seedText.textSize = 12.0F
+                    choosePlant.setTextAppearance(this, R.style.TextAppearance_AppCompat_Large)
+                    choosePlant.setTextColor(ContextCompat.getColor(this, R.color.plantPalGreen))
+                }
+                else {
+                    seedText.textSize = 14.0F
+                }
             }
             in 800..1500 -> {
-                seedImage.layoutParams.width = 700
-                seedLayout.layoutParams.height = 350
-                seedText.textSize = 40.0F
+                if (this.getResources().getConfiguration().orientation == Configuration.ORIENTATION_PORTRAIT) {
+                    seedText.textSize = 40.0F
+                }
+            }
+            in 1500..3000 ->{
+                if (this.getResources().getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE) { seedLayout.layoutParams.height = height / 2
+                            seedText.textSize = 70.0F
+                    }
+                    else {
+                        seedText.textSize = 50.0F
+                    }
+                }
+            }
 
-                seedImage.requestLayout()
-            }
-            in 1500..2500 ->{
-                seedImage.layoutParams.width = 900
-                seedLayout.layoutParams.height = 400
-                seedText.textSize = 50.0F
-                seedImage.requestLayout()
-            }
-        }
+        seedLayout.requestLayout()
+        seedText.requestLayout()
+        seedImage.requestLayout()
+        choosePlant.requestLayout()
 
     }
 
@@ -155,6 +180,25 @@ class selectNewPlant : AppCompatActivity() {
             }
         }
         myPlant?.let { Log.i("PlantCreated!", it.name) }
+
     }
+
+    // Save State on Rotation
+    override fun onSaveInstanceState(outState: Bundle) {
+        super.onSaveInstanceState(outState)
+        seedImageId?.let {outState.putInt("plantImage", it)}
+        seedName?.let {outState.putString("seedName", it)}
+
+        super.onSaveInstanceState(outState)
+    }
+
+    override fun onRestoreInstanceState(savedInstanceState: Bundle) {
+        super.onRestoreInstanceState(savedInstanceState)
+        seedImageId = savedInstanceState.getInt("plantImage")
+        seedName?.let {savedInstanceState.getString("seedName")}
+
+        updateView()
+    }
+
 
 }

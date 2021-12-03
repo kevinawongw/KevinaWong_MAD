@@ -8,11 +8,15 @@
         <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.19270833333333334" />
         <entry key="app/src/main/res/drawable/outlined_rounded_corners.xml" value="0.4478288156681873" />
         <entry key="app/src/main/res/drawable/rounded_corners.xml" value="0.16197916666666667" />
+        <entry key="app/src/main/res/layout-land/activity_end_plant.xml" value="0.17403642478838216" />
+        <entry key="app/src/main/res/layout-land/activity_main.xml" value="0.20671806879545856" />
+        <entry key="app/src/main/res/layout-land/activity_plant_care.xml" value="0.16822916666666668" />
+        <entry key="app/src/main/res/layout-land/activity_select_new_plant.xml" value="0.3198412926924355" />
         <entry key="app/src/main/res/layout/activity_end_plant.xml" value="0.24909738783180352" />
         <entry key="app/src/main/res/layout/activity_help_view.xml" value="0.27794871794871795" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.1996138852790739" />
-        <entry key="app/src/main/res/layout/activity_plant_care.xml" value="0.3368169501575722" />
-        <entry key="app/src/main/res/layout/activity_select_new_plant.xml" value="0.15933115024855168" />
+        <entry key="app/src/main/res/layout/activity_plant_care.xml" value="0.30107313345789416" />
+        <entry key="app/src/main/res/layout/activity_select_new_plant.xml" value="0.25338131804387587" />
       </map>
     </option>
   </component>

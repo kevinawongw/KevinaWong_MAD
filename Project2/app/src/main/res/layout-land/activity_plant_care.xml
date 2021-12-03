@@ -7,11 +7,11 @@
     tools:context=".PlantCare">
 
     <LinearLayout
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:gravity="center_horizontal"
-        android:orientation="vertical"
+        android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -29,13 +29,12 @@
                 android:id="@+id/plantName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="5dp"
                 android:layout_marginBottom="8dp"
                 android:autoText="true"
                 android:background="@drawable/rounded_corners"
                 android:fontFamily="@font/paytone_one"
                 android:lines="1"
-                android:maxLines="1"
                 android:minLines="1"
                 android:singleLine="true"
                 android:text="@string/name"
@@ -53,26 +52,33 @@
 
             <ImageView
                 android:id="@+id/heartImage"
-                android:layout_width="31dp"
-                android:layout_height="32dp"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
                 android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/growthText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/rounded_corners"
+                android:fontFamily="@font/paytone_one"
+                android:text="@string/growthString"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/white"
+                app:circularflow_defaultRadius="20dp"
+                app:circularflow_radiusInDP="20dp"
+                tools:text="Growth: 100%" />
         </LinearLayout>
 
-        <TextView
-            android:id="@+id/growthText"
-            android:layout_width="wrap_content"
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="25dp"
             android:layout_height="wrap_content"
-            android:layout_gravity="left"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="8dp"
-            android:background="@drawable/rounded_corners"
-            android:fontFamily="@font/paytone_one"
-            android:text="@string/growthString"
-            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-            android:textColor="@color/white"
-            app:circularflow_defaultRadius="20dp"
-            app:circularflow_radiusInDP="20dp"
-            tools:text="Growth: 100%" />
+            android:layout_weight="1"
+            app:srcCompat="@drawable/divider" />
 
         <LinearLayout
             android:id="@+id/buttonLayout"
