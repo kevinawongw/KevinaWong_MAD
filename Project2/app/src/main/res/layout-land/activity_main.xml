@@ -53,7 +53,7 @@
                 android:layout_marginStart="40dp"
                 android:layout_marginTop="16dp"
                 android:layout_marginEnd="40dp"
-                app:srcCompat="@drawable/plant"
+                app:srcCompat="@drawable/watering"
                 tools:ignore="ImageContrastCheck" />
 
         </LinearLayout>
